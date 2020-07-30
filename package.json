@@ -1,0 +1,22 @@
+{
+  "name": "kedokudo",
+  "version": "1.0.0",
+  "description": "Github Profile",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KedoKudo/KedoKudo.git"
+  },
+  "author": "KedoKudo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KedoKudo/KedoKudo/issues"
+  },
+  "homepage": "https://github.com/KedoKudo/KedoKudo#readme",
+  "dependencies": {
+    "mustache": "^4.0.1"
+  }
+}
