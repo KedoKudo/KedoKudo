@@ -1,4 +1,10 @@
-Greetings, my name is Chen (KedoKudo) and welcome to my Github front page.  Today is Monday, 7 September, 23:46 CEST.
+Greetings, my name is Chen (KedoKudo) and welcome to my Github front page.  Today is Monday, 7 September, 23:58 CEST.
+
+# Technologies & Skills
+
+![](https://img.shields.io/badge/<OS>-<Linux>-informational?style=flat&logo=<Linux>&logoColor=white&color=2bbc8a)
+![](https://img.shields.io/badge/<OS>-<MacOS>-informational?style=flat&logo=<Apple>&logoColor=white&color=2bbc8a)
+
 
 # Stats
 
