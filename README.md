@@ -1,2 +1,1 @@
-Greetings, my name is Chen (KedoKudo) and welcome to my Github front page.  Today is Thursday, 30 July, 22:08 CEST.
-
+Greetings, my name is Chen (KedoKudo) and welcome to my Github front page.  Today is Monday, 7 September, 23:34 CEST.
