@@ -1,4 +1,4 @@
-Greetings, my name is Chen (KedoKudo) and welcome to my Github front page.  Today is Tuesday, 8 September, 00:23 CEST.
+Greetings, my name is Chen (KedoKudo) and welcome to my Github front page.  Today is Tuesday, 8 September, 00:27 CEST.
 
 # Technologies & Skills
 
@@ -10,7 +10,7 @@ Greetings, my name is Chen (KedoKudo) and welcome to my Github front page.  Toda
 ![](https://img.shields.io/badge/Tools-Cmake-informational?style=flat&logo=Cmake&logoColor=white&color=2bbc8a)
 ![](https://img.shields.io/badge/Tools-Docker-informational?style=flat&logo=Docker&logoColor=white&color=2bbc8a)
 ![](https://img.shields.io/badge/Tools-Jupyter-informational?style=flat&logo=Jupyter&logoColor=white&color=2bbc8a)
-![](https://img.shields.io/badge/Tools-VSCode-informational?style=flat&logo=Visual Studio Code&logoColor=white&color=2bbc8a)
+![](https://img.shields.io/badge/Tools-VSCode-informational?style=flat&logo=visual%20studio%20code&logoColor=white&color=2bbc8a)
 
 
 # Stats
