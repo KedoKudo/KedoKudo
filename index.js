@@ -16,7 +16,7 @@ let DATA = {
     hour: 'numeric',
     minute: 'numeric',
     timeZoneName: 'short',
-    timeZone: 'US/Chicago',
+    timeZone: 'America/Chicago',
   }),
 };
 /**
