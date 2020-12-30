@@ -1,4 +1,4 @@
-Greetings, my name is Chen (KedoKudo) and welcome to my Github front page.  Last update is on Tuesday, 29 December, 18:40 GMT-6.
+Greetings, my name is Chen (KedoKudo) and welcome to my Github front page.  Last update is on Wednesday, 30 December, 02:17 GMT-6.
 
 # Technologies & Skills
 
