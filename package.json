@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/KedoKudo/KedoKudo#readme",
   "dependencies": {
-    "mustache": "^4.0.1"
+    "mustache": "^4.2.0"
   }
 }
