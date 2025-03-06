@@ -1,4 +1,4 @@
-Greetings, my name is Chen (KedoKudo) and welcome to my Github front page. Last update is on Thursday 6 March at 09:45 GMT-6.
+Greetings, my name is Chen (KedoKudo) and welcome to my Github front page. Last update is on Thursday 6 March at 09:50 GMT-6.
 
 ## 👨‍🔬 About Me
 
@@ -48,7 +48,7 @@ I am a Computational Scientist at Oak Ridge National Laboratory, focusing on sci
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=KedoKudo&show_icons=true&theme=vue&hide=html,jupyter%20notebook,vim%20script)](https://github.com/KedoKudo/github-readme-stats)
 
-[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=KedoKudo&theme=vue)](https://git.io/streak-stats)
+[![GitHub Streak](https://streak-stats.demolab.com/?user=KedoKudo&theme=vue)](https://git.io/streak-stats)
 
 ## 📫 Connect With Me
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/chen-z-5a081725/)
