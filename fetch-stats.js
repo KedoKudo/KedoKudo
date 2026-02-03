@@ -11,6 +11,16 @@ const orgNames = (process.env.ORG_NAMES || '')
   .filter(Boolean);
 const orgRepoFilter = (process.env.ORG_REPO_FILTER || 'contributed').toLowerCase();
 const orgRepoLimit = Number.parseInt(process.env.ORG_REPO_LIMIT || '', 10);
+const excludedLanguages = (process.env.EXCLUDED_LANGUAGES || 'Makefile,Jupyter Notebook')
+  .split(',')
+  .map((lang) => lang.trim().toLowerCase())
+  .filter(Boolean);
+const languageMode = (process.env.LANGUAGE_MODE || 'primary').toLowerCase();
+const languageRepoLimit = Number.parseInt(process.env.LANGUAGE_REPO_LIMIT || '120', 10);
+const topLanguagesLimit = Math.max(
+  1,
+  Number.parseInt(process.env.TOP_LANGUAGES_LIMIT || '6', 10),
+);
 
 const headers = {
   'User-Agent': 'kedokudo-profile-automation',
@@ -142,12 +152,15 @@ function mergeRepos(primary, additional) {
   return Array.from(byFullName.values());
 }
 
-function summarizeLanguages(repos) {
+function summarizeLanguagesByPrimary(repos) {
   const counts = {};
   let totalCount = 0;
   repos.forEach((repo) => {
     if (repo.language) {
       const lang = repo.language;
+      if (excludedLanguages.includes(lang.toLowerCase())) {
+        return;
+      }
       counts[lang] = (counts[lang] || 0) + 1;
       totalCount += 1;
     }
@@ -160,7 +173,7 @@ function summarizeLanguages(repos) {
       percent: totalCount === 0 ? 0 : Number(((count / totalCount) * 100).toFixed(1)),
     }))
     .sort((a, b) => b.count - a.count)
-    .slice(0, 4);
+    .slice(0, topLanguagesLimit);
 
   const topLanguagesText =
     entries.length === 0
@@ -170,6 +183,113 @@ function summarizeLanguages(repos) {
   return {
     topLanguages: entries,
     topLanguagesText,
+  };
+}
+
+async function summarizeLanguagesByBytes(repos) {
+  const counts = {};
+  let totalBytes = 0;
+  const sorted = [...repos].sort((a, b) => {
+    const aDate = a.pushed_at ? Date.parse(a.pushed_at) : 0;
+    const bDate = b.pushed_at ? Date.parse(b.pushed_at) : 0;
+    return bDate - aDate;
+  });
+  const limit =
+    languageRepoLimit > 0 ? Math.min(languageRepoLimit, sorted.length) : sorted.length;
+  const targetRepos = sorted.slice(0, limit);
+
+  for (const repo of targetRepos) {
+    if (!repo.full_name) {
+      continue;
+    }
+    try {
+      const langMap = await requestJson(
+        `${apiBase}/repos/${repo.full_name}/languages`,
+      );
+      Object.entries(langMap).forEach(([language, bytes]) => {
+        if (excludedLanguages.includes(language.toLowerCase())) {
+          return;
+        }
+        counts[language] = (counts[language] || 0) + bytes;
+        totalBytes += bytes;
+      });
+    } catch (err) {
+      console.warn(`Skipping ${repo.full_name} language stats.`, err);
+    }
+  }
+
+  const entries = Object.entries(counts)
+    .map(([language, bytes]) => ({
+      language,
+      bytes,
+      percent:
+        totalBytes === 0 ? 0 : Number(((bytes / totalBytes) * 100).toFixed(1)),
+    }))
+    .sort((a, b) => b.bytes - a.bytes)
+    .slice(0, topLanguagesLimit);
+
+  const topLanguagesText =
+    entries.length === 0
+      ? 'Not enough public repositories to determine top languages.'
+      : entries.map((entry) => `${entry.language} (${entry.percent}%)`).join(', ');
+
+  return {
+    topLanguages: entries,
+    topLanguagesText,
+    languageSampledRepos: targetRepos.length,
+  };
+}
+
+async function summarizeLanguages(repos) {
+  if (languageMode === 'bytes') {
+    return summarizeLanguagesByBytes(repos);
+  }
+  return summarizeLanguagesByPrimary(repos);
+}
+
+function applyLanguageExclusions(stats) {
+  if (!Array.isArray(stats.topLanguages) || stats.topLanguages.length === 0) {
+    return stats;
+  }
+
+  const filtered = stats.topLanguages.filter(
+    (entry) =>
+      entry &&
+      entry.language &&
+      !excludedLanguages.includes(entry.language.toLowerCase()),
+  );
+
+  if (filtered.length === 0) {
+    return {
+      ...stats,
+      topLanguages: [],
+      topLanguagesText: 'Not enough public repositories to determine top languages.',
+    };
+  }
+
+  const totalWeight = filtered.reduce((sum, entry) => {
+    if (typeof entry.bytes === 'number') {
+      return sum + entry.bytes;
+    }
+    return sum + (entry.count || 0);
+  }, 0);
+  const normalized = filtered.map((entry) => {
+    const weight = typeof entry.bytes === 'number' ? entry.bytes : entry.count || 0;
+    return {
+      ...entry,
+      percent:
+        totalWeight === 0
+          ? 0
+          : Number(((weight / totalWeight) * 100).toFixed(1)),
+    };
+  });
+
+  return {
+    ...stats,
+    topLanguages: normalized,
+    topLanguagesText: normalized
+      .map((entry) => `${entry.language} (${entry.percent}%)`)
+      .join(', '),
   };
 }
 
@@ -236,7 +356,7 @@ function buildSvg(stats) {
 
 function ensureLanguageFields(stats) {
   if (stats.topLanguages && stats.topLanguagesText) {
-    return stats;
+    return ensureTrackedRepos(stats);
   }
 
   const languages = Array.isArray(stats.topLanguages) ? stats.topLanguages : [];
@@ -249,11 +369,21 @@ function ensureLanguageFields(stats) {
     languages.length === 0
       ? 'Not enough public repositories to determine top languages.'
       : languages.map((entry) => `${entry.language} (${entry.percent ?? '?'}%)`).join(', ');
-  return {
+  return ensureTrackedRepos({
     ...stats,
     topLanguages: languages,
     topLanguagesText: fallbackText,
-  };
+  });
+}
+
+function ensureTrackedRepos(stats) {
+  if (stats.trackedRepos != null) {
+    return stats;
+  }
+  if (stats.publicRepos != null) {
+    return { ...stats, trackedRepos: stats.publicRepos };
+  }
+  return stats;
 }
 
 async function run() {
@@ -266,6 +396,7 @@ async function run() {
         stats.generatedAt = new Date().toISOString();
       }
       stats = ensureLanguageFields(stats);
+      stats = applyLanguageExclusions(stats);
     } else {
       const user = await fetchUser();
       const userRepos = await fetchAllRepos();
@@ -283,7 +414,8 @@ async function run() {
         }
       }
       const trackedRepos = mergeRepos(userRepos, orgRepos);
-      const { topLanguages, topLanguagesText } = summarizeLanguages(trackedRepos);
+      const { topLanguages, topLanguagesText, languageSampledRepos } =
+        await summarizeLanguages(trackedRepos);
       stats = {
         username,
         generatedAt: new Date().toISOString(),
@@ -294,6 +426,7 @@ async function run() {
         totalStars: trackedRepos.reduce((sum, repo) => sum + (repo.stargazers_count || 0), 0),
         topLanguages,
         topLanguagesText,
+        languageSampledRepos,
         orgsIncluded: orgNames,
         orgRepoFilter,
       };

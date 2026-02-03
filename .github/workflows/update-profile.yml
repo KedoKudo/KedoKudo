@@ -29,6 +29,10 @@ jobs:
           GITHUB_USERNAME: KedoKudo
           ORG_NAMES: ornlneutronimaging
           ORG_REPO_FILTER: contributed
+          EXCLUDED_LANGUAGES: Makefile,Jupyter Notebook
+          LANGUAGE_MODE: bytes
+          LANGUAGE_REPO_LIMIT: 200
+          TOP_LANGUAGES_LIMIT: 6
 
       - name: Commit and push changes
         run: |
