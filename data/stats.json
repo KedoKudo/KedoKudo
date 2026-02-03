@@ -1,6 +1,6 @@
 {
   "username": "KedoKudo",
-  "generatedAt": "2026-02-03T16:18:59.086Z",
+  "generatedAt": "2026-02-03T16:40:06.889Z",
   "followers": 34,
   "following": 90,
   "publicRepos": 195,
@@ -8,27 +8,38 @@
   "totalStars": 55,
   "topLanguages": [
     {
-      "language": "Makefile",
-      "count": 51,
-      "percent": 32.9
+      "language": "C++",
+      "bytes": 81217668,
+      "percent": 33
     },
     {
       "language": "Python",
-      "count": 47,
-      "percent": 30.3
+      "bytes": 73285000,
+      "percent": 29.7
     },
     {
-      "language": "Jupyter Notebook",
-      "count": 23,
-      "percent": 14.8
+      "language": "HTML",
+      "bytes": 63408729,
+      "percent": 25.7
     },
     {
-      "language": "C++",
-      "count": 8,
-      "percent": 5.2
+      "language": "IGOR Pro",
+      "bytes": 12488397,
+      "percent": 5.1
+    },
+    {
+      "language": "TypeScript",
+      "bytes": 4227428,
+      "percent": 1.7
+    },
+    {
+      "language": "C",
+      "bytes": 2737602,
+      "percent": 1.1
     }
   ],
-  "topLanguagesText": "Makefile (32.9%), Python (30.3%), Jupyter Notebook (14.8%), C++ (5.2%)",
+  "topLanguagesText": "C++ (33%), Python (29.7%), HTML (25.7%), IGOR Pro (5.1%), TypeScript (1.7%), C (1.1%)",
+  "languageSampledRepos": 200,
   "orgsIncluded": [
     "ornlneutronimaging"
   ],
