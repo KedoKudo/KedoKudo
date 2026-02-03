@@ -27,6 +27,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_USERNAME: KedoKudo
+          ORG_NAMES: ornlneutronimaging
+          ORG_REPO_FILTER: contributed
 
       - name: Commit and push changes
         run: |

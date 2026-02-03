@@ -5,6 +5,12 @@ const https = require('https');
 const username = process.env.GITHUB_USERNAME || 'KedoKudo';
 const token = process.env.GITHUB_TOKEN;
 const apiBase = 'https://api.github.com';
+const orgNames = (process.env.ORG_NAMES || '')
+  .split(',')
+  .map((name) => name.trim())
+  .filter(Boolean);
+const orgRepoFilter = (process.env.ORG_REPO_FILTER || 'contributed').toLowerCase();
+const orgRepoLimit = Number.parseInt(process.env.ORG_REPO_LIMIT || '', 10);
 
 const headers = {
   'User-Agent': 'kedokudo-profile-automation',
@@ -61,6 +67,81 @@ async function fetchAllRepos(page = 1, acc = []) {
   return fetchAllRepos(page + 1, next);
 }
 
+async function fetchOrgRepos(org, page = 1, acc = []) {
+  const repos = await requestJson(
+    `${apiBase}/orgs/${org}/repos?type=public&per_page=100&page=${page}`,
+  );
+  if (!Array.isArray(repos) || repos.length === 0) {
+    return acc;
+  }
+  const next = acc.concat(repos);
+  if (repos.length < 100) {
+    return next;
+  }
+  return fetchOrgRepos(org, page + 1, next);
+}
+
+async function isContributor(owner, repo) {
+  const targetLogin = username.toLowerCase();
+  let page = 1;
+  while (page < 25) {
+    const contributors = await requestJson(
+      `${apiBase}/repos/${owner}/${repo}/contributors?per_page=100&page=${page}`,
+    );
+    if (!Array.isArray(contributors) || contributors.length === 0) {
+      return false;
+    }
+    const match = contributors.find(
+      (contributor) => contributor.login && contributor.login.toLowerCase() === targetLogin,
+    );
+    if (match) {
+      return true;
+    }
+    if (contributors.length < 100) {
+      return false;
+    }
+    page += 1;
+  }
+  return false;
+}
+
+async function filterOrgReposByContribution(repos) {
+  const filtered = [];
+  for (const repo of repos) {
+    const [owner, name] = (repo.full_name || '').split('/');
+    if (!owner || !name) {
+      continue;
+    }
+    try {
+      const contributed = await isContributor(owner, name);
+      if (contributed) {
+        filtered.push(repo);
+      }
+    } catch (err) {
+      console.warn(`Skipping ${repo.full_name} due to contributor check failure.`, err);
+    }
+    if (orgRepoLimit > 0 && filtered.length >= orgRepoLimit) {
+      break;
+    }
+  }
+  return filtered;
+}
+
+function mergeRepos(primary, additional) {
+  const byFullName = new Map();
+  primary.forEach((repo) => {
+    if (repo && repo.full_name) {
+      byFullName.set(repo.full_name, repo);
+    }
+  });
+  additional.forEach((repo) => {
+    if (repo && repo.full_name && !byFullName.has(repo.full_name)) {
+      byFullName.set(repo.full_name, repo);
+    }
+  });
+  return Array.from(byFullName.values());
+}
+
 function summarizeLanguages(repos) {
   const counts = {};
   let totalCount = 0;
@@ -105,7 +186,7 @@ function buildSvg(stats) {
   const lines = [
     `Followers: ${formatNumber(stats.followers)}`,
     `Following: ${formatNumber(stats.following)}`,
-    `Public repos: ${formatNumber(stats.publicRepos)}`,
+    `Repos tracked: ${formatNumber(stats.trackedRepos ?? stats.publicRepos)}`,
     `Stars earned: ${formatNumber(stats.totalStars)}`,
   ];
 
@@ -119,7 +200,7 @@ function buildSvg(stats) {
     )
     .join('\n');
 
-  const barStartY = baseY + lines.length * lineSpacing + 20;
+  const barStartY = baseY + lines.length * lineSpacing + 48;
 
   const bars = stats.topLanguages
     .map((lang, idx) => {
@@ -148,7 +229,7 @@ function buildSvg(stats) {
     'en-US',
   )}</text>
   ${statLines}
-  <text x="${padding}" y="${barStartY - 8}" class="stat-line">Top languages</text>
+  <text x="${padding}" y="${barStartY - 24}" class="stat-line">Top languages</text>
   ${bars || `<text x="${padding}" y="${barStartY + 4}" class="lang-name">No data yet</text>`}
 </svg>`;
 }
@@ -187,17 +268,34 @@ async function run() {
       stats = ensureLanguageFields(stats);
     } else {
       const user = await fetchUser();
-      const repos = await fetchAllRepos();
-      const { topLanguages, topLanguagesText } = summarizeLanguages(repos);
+      const userRepos = await fetchAllRepos();
+      let orgRepos = [];
+      if (orgNames.length > 0) {
+        for (const org of orgNames) {
+          const repos = await fetchOrgRepos(org);
+          orgRepos = orgRepos.concat(repos);
+        }
+        if (orgRepoFilter !== 'all') {
+          orgRepos = await filterOrgReposByContribution(orgRepos);
+        }
+        if (orgRepoLimit > 0) {
+          orgRepos = orgRepos.slice(0, orgRepoLimit);
+        }
+      }
+      const trackedRepos = mergeRepos(userRepos, orgRepos);
+      const { topLanguages, topLanguagesText } = summarizeLanguages(trackedRepos);
       stats = {
         username,
         generatedAt: new Date().toISOString(),
         followers: user.followers,
         following: user.following,
         publicRepos: user.public_repos,
-        totalStars: repos.reduce((sum, repo) => sum + (repo.stargazers_count || 0), 0),
+        trackedRepos: trackedRepos.length,
+        totalStars: trackedRepos.reduce((sum, repo) => sum + (repo.stargazers_count || 0), 0),
         topLanguages,
         topLanguagesText,
+        orgsIncluded: orgNames,
+        orgRepoFilter,
       };
     }
 
