@@ -1,0 +1,41 @@
+name: Update GitHub Profile
+
+on:
+  schedule:
+    - cron: '21 9 * * *'
+  workflow_dispatch:
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Generate README and stats
+        run: npm run generate
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_USERNAME: KedoKudo
+
+      - name: Commit and push changes
+        run: |
+          if git status --short | grep -E 'README.md|assets/stats.svg|data/stats.json' >/dev/null 2>&1; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add README.md assets/stats.svg data/stats.json package-lock.json
+            git commit -m "chore: auto-update profile stats"
+            git push
+          else
+            echo "Nothing to commit"
+          fi

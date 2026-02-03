@@ -1,4 +1,4 @@
-Greetings, my name is Chen (KedoKudo) and welcome to my Github front page. Last update is on Tuesday 3 February at 02:12 GMT-6.
+Greetings, my name is Chen (KedoKudo) and welcome to my Github front page. Last update is on Tuesday 3 February at 09:41 GMT-6.
 
 ## 👨‍🔬 About Me
 
@@ -20,33 +20,22 @@ I am a Computational Scientist at Oak Ridge National Laboratory, focusing on sci
 
 ## 🚀 Featured Projects
 
-<a href="https://github.com/ornlneutronimaging/iMars3D">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=ornlneutronimaging&repo=iMars3D&theme=vue" />
-</a>
-<a href="https://github.com/mantidproject/mantid">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=mantidproject&repo=mantid&theme=vue" />
-</a>
-
-<a href="https://github.com/ornlneutronimaging/mcpevent2hist">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=ornlneutronimaging&repo=mcpevent2hist&theme=vue" />
-</a>
-<a href="https://github.com/ornlneutronimaging/iBeatles">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=ornlneutronimaging&repo=iBeatles&theme=vue" />
-</a>
-
-<a href="https://github.com/lanl/PLEIADES">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=lanl&repo=PLEIADES&theme=vue" />
-</a>
-<a href="https://github.com/KedoKudo/DocSage">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=KedoKudo&repo=DocSage&theme=vue" />
-</a>
-
+- [iMars3D](https://github.com/ornlneutronimaging/iMars3D) – Neutron imaging reconstruction workflow powering instrument operations at ORNL.
+- [Mantid](https://github.com/mantidproject/mantid) – Collaborative neutron and muon scattering analysis suite with global contributors.
+- [mcpevent2hist](https://github.com/ornlneutronimaging/mcpevent2hist) – Transforms raw MCP detector events into analysis-ready histograms.
+- [iBeatles](https://github.com/ornlneutronimaging/iBeatles) – Utility collection that streamlines neutron imaging beamline experiments.
+- [PLEIADES](https://github.com/lanl/PLEIADES) – LANL/ORNL research on scalable, AI-enhanced experimental workflows.
+- [DocSage](https://github.com/KedoKudo/DocSage) – Lightweight knowledge assistant for technical documentation and lab notebooks.
 
 ## 📊 Stats
 
-[![Chen (KedoKudo)'s github stats](https://github-readme-stats.vercel.app/api?username=KedoKudo&theme=vue)](https://github.com/KedoKudo/github-readme-stats)
+![Auto-updated GitHub stats card](assets/stats.svg)
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=KedoKudo&show_icons=true&theme=vue&hide=html,jupyter%20notebook,vim%20script)](https://github.com/KedoKudo/github-readme-stats)
+- **Followers:** 34
+- **Following:** 90
+- **Public repositories:** 48
+- **Total stars:** 312
+- **Top languages:** Python (37.5%), C++ (25%), C (16.7%), Go (8.3%)
 
 ## 📫 Connect With Me
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/chen-z-5a081725/)

@@ -1,0 +1,31 @@
+{
+  "username": "KedoKudo",
+  "generatedAt": "2026-02-03T15:21:00.000Z",
+  "followers": 34,
+  "following": 90,
+  "publicRepos": 48,
+  "totalStars": 312,
+  "topLanguages": [
+    {
+      "language": "Python",
+      "count": 18,
+      "percent": 37.5
+    },
+    {
+      "language": "C++",
+      "count": 12,
+      "percent": 25
+    },
+    {
+      "language": "C",
+      "count": 8,
+      "percent": 16.7
+    },
+    {
+      "language": "Go",
+      "count": 4,
+      "percent": 8.3
+    }
+  ],
+  "topLanguagesText": "Python (37.5%), C++ (25%), C (16.7%), Go (8.3%)"
+}

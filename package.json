@@ -4,6 +4,7 @@
   "description": "Github Profile",
   "main": "index.js",
   "scripts": {
+    "generate": "node fetch-stats.js && node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
