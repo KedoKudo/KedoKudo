@@ -1,31 +1,36 @@
 {
   "username": "KedoKudo",
-  "generatedAt": "2026-02-03T15:58:15.028Z",
+  "generatedAt": "2026-02-03T16:18:59.086Z",
   "followers": 34,
   "following": 90,
   "publicRepos": 195,
-  "totalStars": 26,
+  "trackedRepos": 214,
+  "totalStars": 55,
   "topLanguages": [
     {
       "language": "Makefile",
       "count": 51,
-      "percent": 37.5
+      "percent": 32.9
     },
     {
       "language": "Python",
-      "count": 38,
-      "percent": 27.9
+      "count": 47,
+      "percent": 30.3
     },
     {
       "language": "Jupyter Notebook",
-      "count": 17,
-      "percent": 12.5
+      "count": 23,
+      "percent": 14.8
     },
     {
       "language": "C++",
       "count": 8,
-      "percent": 5.9
+      "percent": 5.2
     }
   ],
-  "topLanguagesText": "Makefile (37.5%), Python (27.9%), Jupyter Notebook (12.5%), C++ (5.9%)"
+  "topLanguagesText": "Makefile (32.9%), Python (30.3%), Jupyter Notebook (14.8%), C++ (5.2%)",
+  "orgsIncluded": [
+    "ornlneutronimaging"
+  ],
+  "orgRepoFilter": "contributed"
 }
