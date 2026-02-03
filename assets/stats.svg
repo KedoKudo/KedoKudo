@@ -12,27 +12,27 @@
   <text x="24" y="44" class="title">GitHub Snapshot · 2/3/2026</text>
   <text x="24" y="74" class="stat-line">Followers: 34</text>
 <text x="24" y="98" class="stat-line">Following: 90</text>
-<text x="24" y="122" class="stat-line">Public repos: 48</text>
-<text x="24" y="146" class="stat-line">Stars earned: 312</text>
+<text x="24" y="122" class="stat-line">Public repos: 195</text>
+<text x="24" y="146" class="stat-line">Stars earned: 26</text>
   <text x="24" y="182" class="stat-line">Top languages</text>
   
-      <text x="24" y="190" class="lang-name">Python</text>
+      <text x="24" y="190" class="lang-name">Makefile</text>
       <rect x="134" y="176" width="154.5" height="16" rx="4" class="bar"></rect>
       <text x="296.5" y="190" class="lang-percent">37.5%</text>
     
 
-      <text x="24" y="218" class="lang-name">C++</text>
-      <rect x="134" y="204" width="103" height="16" rx="4" class="bar"></rect>
-      <text x="245" y="218" class="lang-percent">25%</text>
+      <text x="24" y="218" class="lang-name">Python</text>
+      <rect x="134" y="204" width="114.948" height="16" rx="4" class="bar"></rect>
+      <text x="256.948" y="218" class="lang-percent">27.9%</text>
     
 
-      <text x="24" y="246" class="lang-name">C</text>
-      <rect x="134" y="232" width="68.80399999999999" height="16" rx="4" class="bar"></rect>
-      <text x="210.80399999999997" y="246" class="lang-percent">16.7%</text>
+      <text x="24" y="246" class="lang-name">Jupyter Notebook</text>
+      <rect x="134" y="232" width="51.5" height="16" rx="4" class="bar"></rect>
+      <text x="193.5" y="246" class="lang-percent">12.5%</text>
     
 
-      <text x="24" y="274" class="lang-name">Go</text>
-      <rect x="134" y="260" width="34.196000000000005" height="16" rx="4" class="bar"></rect>
-      <text x="176.196" y="274" class="lang-percent">8.3%</text>
+      <text x="24" y="274" class="lang-name">C++</text>
+      <rect x="134" y="260" width="24.308" height="16" rx="4" class="bar"></rect>
+      <text x="166.308" y="274" class="lang-percent">5.9%</text>
     
 </svg>

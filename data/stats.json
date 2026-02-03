@@ -1,31 +1,31 @@
 {
   "username": "KedoKudo",
-  "generatedAt": "2026-02-03T15:21:00.000Z",
+  "generatedAt": "2026-02-03T15:58:15.028Z",
   "followers": 34,
   "following": 90,
-  "publicRepos": 48,
-  "totalStars": 312,
+  "publicRepos": 195,
+  "totalStars": 26,
   "topLanguages": [
     {
-      "language": "Python",
-      "count": 18,
+      "language": "Makefile",
+      "count": 51,
       "percent": 37.5
     },
     {
+      "language": "Python",
+      "count": 38,
+      "percent": 27.9
+    },
+    {
+      "language": "Jupyter Notebook",
+      "count": 17,
+      "percent": 12.5
+    },
+    {
       "language": "C++",
-      "count": 12,
-      "percent": 25
-    },
-    {
-      "language": "C",
       "count": 8,
-      "percent": 16.7
-    },
-    {
-      "language": "Go",
-      "count": 4,
-      "percent": 8.3
+      "percent": 5.9
     }
   ],
-  "topLanguagesText": "Python (37.5%), C++ (25%), C (16.7%), Go (8.3%)"
+  "topLanguagesText": "Makefile (37.5%), Python (27.9%), Jupyter Notebook (12.5%), C++ (5.9%)"
 }

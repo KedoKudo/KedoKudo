@@ -1,4 +1,4 @@
-Greetings, my name is Chen (KedoKudo) and welcome to my Github front page. Last update is on Tuesday 3 February at 09:41 GMT-6.
+Greetings, my name is Chen (KedoKudo) and welcome to my Github front page. Last update is on Tuesday 3 February at 09:58 GMT-6.
 
 ## 👨‍🔬 About Me
 
@@ -33,9 +33,9 @@ I am a Computational Scientist at Oak Ridge National Laboratory, focusing on sci
 
 - **Followers:** 34
 - **Following:** 90
-- **Public repositories:** 48
-- **Total stars:** 312
-- **Top languages:** Python (37.5%), C++ (25%), C (16.7%), Go (8.3%)
+- **Public repositories:** 195
+- **Total stars:** 26
+- **Top languages:** Makefile (37.5%), Python (27.9%), Jupyter Notebook (12.5%), C++ (5.9%)
 
 ## 📫 Connect With Me
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/chen-z-5a081725/)
