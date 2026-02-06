@@ -9,7 +9,7 @@
     .bar { fill: #2ea043; }
   </style>
   <rect class="card" x="0.5" y="0.5" width="599" height="319" rx="16" />
-  <text x="24" y="44" class="title">GitHub Snapshot · 2/5/2026</text>
+  <text x="24" y="44" class="title">GitHub Snapshot · 2/6/2026</text>
   <text x="24" y="74" class="stat-line">Followers: 34</text>
 <text x="24" y="98" class="stat-line">Following: 90</text>
 <text x="24" y="122" class="stat-line">Repos tracked: 215</text>
@@ -17,8 +17,8 @@
   <text x="24" y="194" class="stat-line">Top languages</text>
   
       <text x="24" y="218" class="lang-name">C++</text>
-      <rect x="134" y="204" width="135.54799999999997" height="16" rx="4" class="bar"></rect>
-      <text x="277.548" y="218" class="lang-percent">32.9%</text>
+      <rect x="134" y="204" width="135.136" height="16" rx="4" class="bar"></rect>
+      <text x="277.13599999999997" y="218" class="lang-percent">32.8%</text>
     
 
       <text x="24" y="246" class="lang-name">Python</text>
