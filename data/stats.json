@@ -1,26 +1,26 @@
 {
   "username": "KedoKudo",
-  "generatedAt": "2026-03-11T09:35:39.403Z",
+  "generatedAt": "2026-03-12T09:35:29.557Z",
   "followers": 34,
   "following": 90,
   "publicRepos": 195,
-  "trackedRepos": 216,
+  "trackedRepos": 217,
   "totalStars": 61,
   "topLanguages": [
     {
       "language": "C++",
-      "bytes": 81217668,
-      "percent": 31.2
+      "bytes": 80698832,
+      "percent": 31
     },
     {
       "language": "Python",
       "bytes": 73259107,
-      "percent": 28.1
+      "percent": 28.2
     },
     {
       "language": "HTML",
       "bytes": 63408729,
-      "percent": 24.3
+      "percent": 24.4
     },
     {
       "language": "IGOR Pro",
@@ -38,7 +38,7 @@
       "percent": 1.6
     }
   ],
-  "topLanguagesText": "C++ (31.2%), Python (28.1%), HTML (24.3%), IGOR Pro (4.8%), Gnuplot (4.3%), TypeScript (1.6%)",
+  "topLanguagesText": "C++ (31%), Python (28.2%), HTML (24.4%), IGOR Pro (4.8%), Gnuplot (4.3%), TypeScript (1.6%)",
   "languageSampledRepos": 200,
   "orgsIncluded": [
     "ornlneutronimaging"
