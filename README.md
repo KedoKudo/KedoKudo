@@ -1,4 +1,4 @@
-Greetings, my name is Chen (KedoKudo) and welcome to my Github front page. Last update is on Wednesday, April 15, 2026 at 4:53 AM CDT.
+Greetings, my name is Chen (KedoKudo) and welcome to my Github front page. Last update is on Thursday, April 16, 2026 at 4:52 AM CDT.
 
 ## 👨‍🔬 About Me
 
@@ -33,7 +33,7 @@ I am a Computational Scientist at Oak Ridge National Laboratory, focusing on sci
   <img src="assets/stats.svg" alt="GitHub snapshot showing followers, repository and star counts plus top languages." />
 </p>
 
-<p><sub>Last sync: Wednesday, April 15, 2026 at 4:53 AM CDT · 36 followers · 218 repos tracked (195 public) · 64 stars · Top languages: C++ (32.4%), Python (29.6%), HTML (25.5%), IGOR Pro (5%), TypeScript (1.7%), Rust (1.5%)</sub></p>
+<p><sub>Last sync: Thursday, April 16, 2026 at 4:52 AM CDT · 37 followers · 218 repos tracked (195 public) · 64 stars · Top languages: C++ (32.4%), Python (29.6%), HTML (25.5%), IGOR Pro (5%), TypeScript (1.7%), Rust (1.5%)</sub></p>
 
 ## 📫 Connect With Me
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/chen-z-5a081725/)
