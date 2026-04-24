@@ -9,7 +9,7 @@
     .bar { fill: #2ea043; }
   </style>
   <rect class="card" x="0.5" y="0.5" width="599" height="319" rx="16" />
-  <text x="24" y="44" class="title">GitHub Snapshot · 4/23/2026</text>
+  <text x="24" y="44" class="title">GitHub Snapshot · 4/24/2026</text>
   <text x="24" y="74" class="stat-line">Followers: 38</text>
 <text x="24" y="98" class="stat-line">Following: 90</text>
 <text x="24" y="122" class="stat-line">Repos tracked: 218</text>
@@ -36,13 +36,13 @@
       <text x="162.6" y="302" class="lang-percent">5%</text>
     
 
-      <text x="24" y="330" class="lang-name">TypeScript</text>
+      <text x="24" y="330" class="lang-name">Rust</text>
       <rect x="134" y="316" width="7.0040000000000004" height="16" rx="4" class="bar"></rect>
       <text x="149.004" y="330" class="lang-percent">1.7%</text>
     
 
-      <text x="24" y="358" class="lang-name">Rust</text>
-      <rect x="134" y="344" width="6.5920000000000005" height="16" rx="4" class="bar"></rect>
-      <text x="148.592" y="358" class="lang-percent">1.6%</text>
+      <text x="24" y="358" class="lang-name">TypeScript</text>
+      <rect x="134" y="344" width="7.0040000000000004" height="16" rx="4" class="bar"></rect>
+      <text x="149.004" y="358" class="lang-percent">1.7%</text>
     
 </svg>
