@@ -9,26 +9,26 @@
     .bar { fill: #2ea043; }
   </style>
   <rect class="card" x="0.5" y="0.5" width="599" height="319" rx="16" />
-  <text x="24" y="44" class="title">GitHub Snapshot · 5/22/2026</text>
+  <text x="24" y="44" class="title">GitHub Snapshot · 5/23/2026</text>
   <text x="24" y="74" class="stat-line">Followers: 36</text>
 <text x="24" y="98" class="stat-line">Following: 90</text>
-<text x="24" y="122" class="stat-line">Repos tracked: 219</text>
+<text x="24" y="122" class="stat-line">Repos tracked: 220</text>
 <text x="24" y="146" class="stat-line">Stars earned: 67</text>
   <text x="24" y="194" class="stat-line">Top languages</text>
   
       <text x="24" y="218" class="lang-name">C++</text>
-      <rect x="134" y="204" width="132.66400000000002" height="16" rx="4" class="bar"></rect>
-      <text x="274.664" y="218" class="lang-percent">32.2%</text>
+      <rect x="134" y="204" width="131.84" height="16" rx="4" class="bar"></rect>
+      <text x="273.84000000000003" y="218" class="lang-percent">32%</text>
     
 
       <text x="24" y="246" class="lang-name">Python</text>
-      <rect x="134" y="232" width="122.36399999999999" height="16" rx="4" class="bar"></rect>
-      <text x="264.364" y="246" class="lang-percent">29.7%</text>
+      <rect x="134" y="232" width="124.42399999999999" height="16" rx="4" class="bar"></rect>
+      <text x="266.424" y="246" class="lang-percent">30.2%</text>
     
 
       <text x="24" y="274" class="lang-name">HTML</text>
-      <rect x="134" y="260" width="104.236" height="16" rx="4" class="bar"></rect>
-      <text x="246.236" y="274" class="lang-percent">25.3%</text>
+      <rect x="134" y="260" width="103.824" height="16" rx="4" class="bar"></rect>
+      <text x="245.824" y="274" class="lang-percent">25.2%</text>
     
 
       <text x="24" y="302" class="lang-name">IGOR Pro</text>
@@ -37,8 +37,8 @@
     
 
       <text x="24" y="330" class="lang-name">Rust</text>
-      <rect x="134" y="316" width="8.24" height="16" rx="4" class="bar"></rect>
-      <text x="150.24" y="330" class="lang-percent">2%</text>
+      <rect x="134" y="316" width="7.827999999999999" height="16" rx="4" class="bar"></rect>
+      <text x="149.828" y="330" class="lang-percent">1.9%</text>
     
 
       <text x="24" y="358" class="lang-name">TypeScript</text>
