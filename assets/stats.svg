@@ -9,7 +9,7 @@
     .bar { fill: #2ea043; }
   </style>
   <rect class="card" x="0.5" y="0.5" width="599" height="319" rx="16" />
-  <text x="24" y="44" class="title">GitHub Snapshot · 6/2/2026</text>
+  <text x="24" y="44" class="title">GitHub Snapshot · 6/3/2026</text>
   <text x="24" y="74" class="stat-line">Followers: 36</text>
 <text x="24" y="98" class="stat-line">Following: 90</text>
 <text x="24" y="122" class="stat-line">Repos tracked: 220</text>
@@ -32,8 +32,8 @@
     
 
       <text x="24" y="302" class="lang-name">IGOR Pro</text>
-      <rect x="134" y="288" width="20.6" height="16" rx="4" class="bar"></rect>
-      <text x="162.6" y="302" class="lang-percent">5%</text>
+      <rect x="134" y="288" width="20.188000000000002" height="16" rx="4" class="bar"></rect>
+      <text x="162.188" y="302" class="lang-percent">4.9%</text>
     
 
       <text x="24" y="330" class="lang-name">Rust</text>
