@@ -1,3 +1,4 @@
-- I'm deep in correctness and audit work on [HyperCTui](https://github.com/ornlneutronimaging/HyperCTui), tracking down issues like a transposed TOF ROI and an incorrect default source-detector distance for VENUS applications.
-- I'm modernizing HyperCTui's I/O by removing direct NeuNorm dependencies and porting code to the NeuNorm 2.0 API while shoring up packaging, install, and contract test coverage.
-- I'm reviewing and contributing across the neutron imaging ecosystem, including [NeutronImagingScripts](https://github.com/ornlneutronimaging/NeutronImagingScripts), [CylindricalGeometryCorrection](https://github.com/ornlneutronimaging/CylindricalGeometryCorrection), and [NEREIDS](https://github.com/ornlneutronimaging/NEREIDS).
+- I'm doing a deep dive on [HyperCTui](https://github.com/ornlneutronimaging/HyperCTui), tackling a batch of correctness fixes from a recent audit—from VENUS source-detector distance defaults to transposed TOF ROI sampling.
+- I'm modernizing HyperCTui's data I/O by porting away from direct NeuNorm calls toward the NeuNorm 2.0 API and adding contract tests around the cropping logic.
+- I'm reviewing and merging work across the imaging stack, including [NEREIDS](https://github.com/ornlneutronimaging/NEREIDS), [NeutronImagingScripts](https://github.com/ornlneutronimaging/NeutronImagingScripts), and [CylindricalGeometryCorrection](https://github.com/ornlneutronimaging/CylindricalGeometryCorrection).
+- I'm also tinkering with my own [profile repo](https://github.com/KedoKudo/KedoKudo) on the side.
