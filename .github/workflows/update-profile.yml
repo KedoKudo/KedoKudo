@@ -22,10 +22,12 @@ jobs:
       HAS_OPENROUTER_KEY: ${{ secrets.OPENROUTER_API_KEY != '' }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Setup uv
-        uses: astral-sh/setup-uv@v6
+        uses: astral-sh/setup-uv@v7
+        with:
+          cache-dependency-glob: "scripts/*.py"
 
       - name: Refresh AI highlight with Claude
         if: env.HAS_OPENROUTER_KEY == 'true' && (github.event_name == 'workflow_dispatch' || github.event.schedule == '0 9 * * 1')
