@@ -171,7 +171,7 @@ def build_language_entries(counts: dict[str, int], sampled: int) -> dict:
         for lang, weight in sorted(counts.items(), key=lambda kv: kv[1], reverse=True)
     ][:TOP_LANGUAGES_LIMIT]
     text = (
-        ", ".join(f"{e['language']} ({e['percent']}%)" for e in entries)
+        ", ".join(f"{e['language']} ({e['percent']:g}%)" for e in entries)
         if entries
         else "Not enough public repositories to determine top languages."
     )
@@ -208,56 +208,119 @@ def load_stats() -> dict:
     return fetch_stats()
 
 
+# GitHub linguist colors for the language bar; unknown languages fall back to a palette.
+LANG_COLORS = {
+    "python": "#3572A5",
+    "c++": "#f34b7d",
+    "c": "#555555",
+    "html": "#e34c26",
+    "css": "#563d7c",
+    "rust": "#dea584",
+    "go": "#00ADD8",
+    "typescript": "#3178c6",
+    "javascript": "#f1e05a",
+    "jupyter notebook": "#DA5B0B",
+    "igor pro": "#0000cc",
+    "shell": "#89e051",
+    "cmake": "#DA3434",
+    "fortran": "#4d41b1",
+    "java": "#b07219",
+    "matlab": "#e16737",
+}
+FALLBACK_COLORS = ["#58a6ff", "#2ea043", "#d29922", "#db61a2", "#f78166", "#8b949e"]
+
+
 def build_svg(stats: dict) -> str:
-    width, height, padding = 600, 320, 24
-    max_bar_width = width - padding * 2 - 140
-    title_y = padding + 20
-    base_y = title_y + 30
-    line_spacing = 24
+    from html import escape
 
-    lines = [
-        f"Followers: {stats['followers']:,}",
-        f"Following: {stats['following']:,}",
-        f"Repos tracked: {stats.get('trackedRepos') or stats['publicRepos']:,}",
-        f"Stars earned: {stats['totalStars']:,}",
-    ]
-    stat_lines = "\n".join(
-        f'<text x="{padding}" y="{base_y + i * line_spacing}" class="stat-line">{line}</text>'
-        for i, line in enumerate(lines)
-    )
-
-    bar_start_y = base_y + len(lines) * line_spacing + 48
-    bars = []
-    for idx, lang in enumerate(stats.get("topLanguages", [])):
-        bar_width = lang["percent"] / 100 * max_bar_width
-        y = bar_start_y + idx * 28
-        bars.append(
-            f'<text x="{padding}" y="{y}" class="lang-name">{lang["language"]}</text>\n'
-            f'<rect x="{padding + 110}" y="{y - 14}" width="{bar_width:.1f}" height="16" rx="4" class="bar"></rect>\n'
-            f'<text x="{padding + 110 + bar_width + 8:.1f}" y="{y}" class="lang-percent">{lang["percent"]}%</text>'
-        )
-    bars_svg = "\n".join(bars) or (
-        f'<text x="{padding}" y="{bar_start_y + 4}" class="lang-name">No data yet</text>'
-    )
+    width, height, padding = 720, 244, 28
+    inner = width - padding * 2
 
     generated = datetime.fromisoformat(stats["generatedAt"].replace("Z", "+00:00"))
-    title_date = generated.astimezone(PROFILE_TIME_ZONE).strftime("%-m/%-d/%Y")
+    title_date = generated.astimezone(PROFILE_TIME_ZONE).strftime("%b %-d, %Y")
+
+    tiles = [
+        (f"{stats['followers']:,}", "Followers"),
+        (f"{stats['following']:,}", "Following"),
+        (f"{stats.get('trackedRepos') or stats['publicRepos']:,}", "Repos tracked"),
+        (f"{stats['totalStars']:,}", "Stars earned"),
+    ]
+    tile_w = inner / len(tiles)
+    tiles_svg = "\n".join(
+        f'<g class="fade" style="animation-delay: {0.1 + i * 0.1:.1f}s">'
+        f'<text x="{padding + i * tile_w:.0f}" y="100" class="number">{value}</text>'
+        f'<text x="{padding + i * tile_w:.0f}" y="121" class="label">{label}</text></g>'
+        for i, (value, label) in enumerate(tiles)
+    )
+
+    languages = stats.get("topLanguages", [])
+    bar_y, bar_h = 166, 12
+    segments, legend = [], []
+    x = float(padding)
+    for i, lang in enumerate(languages):
+        color = LANG_COLORS.get(lang["language"].lower(), FALLBACK_COLORS[i % len(FALLBACK_COLORS)])
+        seg_w = lang["percent"] / 100 * inner
+        segments.append(
+            f'<rect x="{x:.1f}" y="{bar_y}" width="{max(seg_w - 2, 2):.1f}" height="{bar_h}" fill="{color}" />'
+        )
+        col, row = i % 3, i // 3
+        lx = padding + col * (inner / 3)
+        ly = 204 + row * 22
+        legend.append(
+            f'<g class="fade" style="animation-delay: {0.5 + i * 0.08:.2f}s">'
+            f'<circle cx="{lx + 5:.0f}" cy="{ly - 4}" r="5" fill="{color}" />'
+            f'<text x="{lx + 16:.0f}" y="{ly}" class="legend">'
+            f'{escape(lang["language"])} <tspan class="label">{lang["percent"]:g}%</tspan></text></g>'
+        )
+        x += seg_w
+    if x < padding + inner - 2:  # top-N truncation leaves a remainder — show it as "other"
+        segments.append(
+            f'<rect x="{x:.1f}" y="{bar_y}" width="{padding + inner - x:.1f}" height="{bar_h}" '
+            'class="other" />'
+        )
 
     return f"""<?xml version="1.0" encoding="UTF-8"?>
-<svg width="{width}" height="{height}" viewBox="0 0 {width} {height}" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="{width}" height="{height}" viewBox="0 0 {width} {height}" fill="none" role="img"
+     aria-label="GitHub stats for {stats.get('username', USERNAME)}" xmlns="http://www.w3.org/2000/svg">
   <style>
-    .card {{ fill: #0d1117; stroke: #30363d; stroke-width: 1; rx: 16; }}
-    .title {{ font: 700 20px 'Segoe UI', Ubuntu, Sans-Serif; fill: #f0f6fc; }}
-    .stat-line {{ font: 400 16px 'Segoe UI', Ubuntu, Sans-Serif; fill: #c9d1d9; }}
-    .lang-name {{ font: 600 14px 'Segoe UI', Ubuntu, Sans-Serif; fill: #58a6ff; }}
-    .lang-percent {{ font: 400 14px 'Segoe UI', Ubuntu, Sans-Serif; fill: #8b949e; }}
-    .bar {{ fill: #2ea043; }}
+    svg {{ font-family: -apple-system, 'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif; }}
+    .card   {{ fill: #ffffff; stroke: #d0d7de; }}
+    .title  {{ font-size: 17px; font-weight: 700; fill: #1f2328; }}
+    .date   {{ font-size: 12px; fill: #656d76; }}
+    .number {{ font-size: 27px; font-weight: 800; fill: #1f2328; }}
+    .label  {{ font-size: 12px; fill: #656d76; }}
+    .section {{ font-size: 12px; font-weight: 600; fill: #656d76; letter-spacing: .5px; }}
+    .legend {{ font-size: 12.5px; font-weight: 600; fill: #1f2328; }}
+    .other  {{ fill: #d0d7de; }}
+    @media (prefers-color-scheme: dark) {{
+      .card   {{ fill: #0d1117; stroke: #30363d; }}
+      .title, .number, .legend {{ fill: #f0f6fc; }}
+      .date, .label, .section {{ fill: #8b949e; }}
+      .other  {{ fill: #30363d; }}
+    }}
+    .fade {{ opacity: 0; animation: fadeIn .6s ease forwards; }}
+    .bar-anim {{ transform: scaleX(0); transform-origin: {padding}px 0; animation: grow .9s .35s cubic-bezier(.2,.7,.3,1) forwards; }}
+    @keyframes fadeIn {{ to {{ opacity: 1; }} }}
+    @keyframes grow {{ to {{ transform: scaleX(1); }} }}
   </style>
-  <rect class="card" x="0.5" y="0.5" width="{width - 1}" height="{height - 1}" rx="16" />
-  <text x="{padding}" y="{title_y}" class="title">GitHub Snapshot · {title_date}</text>
-  {stat_lines}
-  <text x="{padding}" y="{bar_start_y - 24}" class="stat-line">Top languages</text>
-  {bars_svg}
+  <defs>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#58a6ff" />
+      <stop offset="100%" stop-color="#2ea043" />
+    </linearGradient>
+    <clipPath id="card-clip"><rect x="0.5" y="0.5" width="{width - 1}" height="{height - 1}" rx="14" /></clipPath>
+    <clipPath id="bar-clip"><rect x="{padding}" y="{bar_y}" width="{inner}" height="{bar_h}" rx="6" /></clipPath>
+  </defs>
+  <rect class="card" x="0.5" y="0.5" width="{width - 1}" height="{height - 1}" rx="14" stroke-width="1" />
+  <rect x="0" y="0" width="{width}" height="4" fill="url(#accent)" clip-path="url(#card-clip)" />
+  <g class="fade">
+    <text x="{padding}" y="48" class="title">{stats.get('username', USERNAME)} · GitHub Snapshot</text>
+    <text x="{width - padding}" y="48" text-anchor="end" class="date">{title_date}</text>
+  </g>
+  {tiles_svg}
+  <text x="{padding}" y="152" class="section fade" style="animation-delay: .3s">TOP LANGUAGES</text>
+  <g class="bar-anim" clip-path="url(#bar-clip)">{''.join(segments)}</g>
+  {''.join(legend)}
 </svg>"""
 
 
