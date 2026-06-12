@@ -1,3 +1,3 @@
-- I'm building agentic automation into my daily workflow — starting with this very profile, which now maintains itself through a Claude-powered GitHub Actions pipeline.
-- I'm continuing to develop neutron imaging reduction tools like [iMars3D](https://github.com/ornlneutronimaging/iMars3D) and [mcpevent2hist](https://github.com/ornlneutronimaging/mcpevent2hist) for instrument operations at ORNL.
-- I'm exploring how AI-enhanced experimental workflows like [PLEIADES](https://github.com/lanl/PLEIADES) can change the way scattering experiments are designed and analyzed.
+- I'm deep in correctness and audit work on [HyperCTui](https://github.com/ornlneutronimaging/HyperCTui), tracking down issues like a transposed TOF ROI and an incorrect default source-detector distance for VENUS applications.
+- I'm modernizing HyperCTui's I/O by removing direct NeuNorm dependencies and porting code to the NeuNorm 2.0 API while shoring up packaging, install, and contract test coverage.
+- I'm reviewing and contributing across the neutron imaging ecosystem, including [NeutronImagingScripts](https://github.com/ornlneutronimaging/NeutronImagingScripts), [CylindricalGeometryCorrection](https://github.com/ornlneutronimaging/CylindricalGeometryCorrection), and [NEREIDS](https://github.com/ornlneutronimaging/NEREIDS).
