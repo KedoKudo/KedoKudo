@@ -1,5 +1,10 @@
 <h1 align="center">Hi, I'm Chen (KedoKudo) 👋</h1>
-<p align="center"><em>Computational Scientist @ Oak Ridge National Laboratory</em></p>
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=17&duration=3200&pause=900&center=true&vCenter=true&repeat=true&width=640&height=28&color=F0F6FC&lines=Computational+Scientist+%40+Oak+Ridge+National+Laboratory;Neutron+Scattering+%C2%B7+AI+Research+%C2%B7+Scientific+Software;This+README+maintains+itself+with+an+agentic+AI+pipeline" />
+    <img alt="Computational Scientist @ Oak Ridge National Laboratory — Neutron Scattering · AI Research · Scientific Software" src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=17&duration=3200&pause=900&center=true&vCenter=true&repeat=true&width=640&height=28&color=1F2328&lines=Computational+Scientist+%40+Oak+Ridge+National+Laboratory;Neutron+Scattering+%C2%B7+AI+Research+%C2%B7+Scientific+Software;This+README+maintains+itself+with+an+agentic+AI+pipeline" />
+  </picture>
+</p>
 
 I work at the intersection of **neutron scattering science**, **AI research**, and **scientific software engineering** — building the software that turns raw neutron events into physics, and exploring how AI can accelerate the way we do science.
 
@@ -58,6 +63,15 @@ I work at the intersection of **neutron scattering science**, **AI research**, a
 
 <p><sub>Last sync: Thursday, June 11, 2026 at 8:36 PM CDT · 36 followers · 222 repos tracked (197 public) · 67 stars · Top languages: C++ (32.0%), Python (30.7%), HTML (25.2%), IGOR Pro (5.0%), Rust (2.0%), TypeScript (1.7%)</sub></p>
 
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/KedoKudo/KedoKudo/output/github-snake-dark.svg" />
+    <img alt="Snake animation eating my GitHub contribution graph" src="https://raw.githubusercontent.com/KedoKudo/KedoKudo/output/github-snake.svg" />
+  </picture>
+</p>
+
+<p align="center"><sub>🐍 regenerated daily from my contribution graph by <a href="https://github.com/Platane/snk">Platane/snk</a></sub></p>
+
 ## ⚙️ How This Profile Works
 
 This README is not edited by hand — it's the output of a small agentic pipeline that lives in this repo:
@@ -73,4 +87,4 @@ This README is not edited by hand — it's the output of a small agentic pipelin
 [![ORNL](https://img.shields.io/badge/ORNL-Profile-orange?style=flat&logo=atom)](https://www.ornl.gov/staff-profile/chen-zhang)
 [![ORCID](https://img.shields.io/badge/ORCID-Profile-green?style=flat&logo=orcid)](https://orcid.org/0000-0001-8374-4467)
 
-<sub>Last updated on Thursday, June 11, 2026 at 8:42 PM CDT.</sub>
+<sub>Last updated on Thursday, June 11, 2026 at 8:49 PM CDT.</sub>
