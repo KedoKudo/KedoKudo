@@ -2,7 +2,8 @@ name: Update GitHub Profile
 
 on:
   schedule:
-    - cron: '21 9 * * *'
+    - cron: '21 9 * * *'   # daily — refresh stats
+    - cron: '0 9 * * 1'    # weekly (Monday) — refresh the Claude-written highlight
   workflow_dispatch:
 
 jobs:
@@ -10,37 +11,41 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+    env:
+      GITHUB_USERNAME: KedoKudo
+      ORG_NAMES: ornlneutronimaging
+      ORG_REPO_FILTER: contributed
+      EXCLUDED_LANGUAGES: Makefile,Jupyter Notebook
+      LANGUAGE_MODE: bytes
+      LANGUAGE_REPO_LIMIT: 200
+      TOP_LANGUAGES_LIMIT: 6
+      HAS_OPENROUTER_KEY: ${{ secrets.OPENROUTER_API_KEY != '' }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
+      - name: Setup uv
+        uses: astral-sh/setup-uv@v6
 
-      - name: Install dependencies
-        run: npm ci
+      - name: Refresh AI highlight with Claude
+        if: env.HAS_OPENROUTER_KEY == 'true' && (github.event_name == 'workflow_dispatch' || github.event.schedule == '0 9 * * 1')
+        run: uv run scripts/ai_highlight.py
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Generate README and stats
-        run: npm run generate
+        run: uv run scripts/update_profile.py
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITHUB_USERNAME: KedoKudo
-          ORG_NAMES: ornlneutronimaging
-          ORG_REPO_FILTER: contributed
-          EXCLUDED_LANGUAGES: Makefile,Jupyter Notebook
-          LANGUAGE_MODE: bytes
-          LANGUAGE_REPO_LIMIT: 200
-          TOP_LANGUAGES_LIMIT: 6
 
       - name: Commit and push changes
         run: |
-          if git status --short | grep -E 'README.md|assets/stats.svg|data/stats.json' >/dev/null 2>&1; then
+          if git status --short | grep -E 'README.md|assets/stats.svg|data/' >/dev/null 2>&1; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add README.md assets/stats.svg data/stats.json package-lock.json
-            git commit -m "chore: auto-update profile stats"
+            git add README.md assets/stats.svg data/
+            git commit -m "chore: auto-update profile"
             git push
           else
             echo "Nothing to commit"

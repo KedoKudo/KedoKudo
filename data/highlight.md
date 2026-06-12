@@ -1,0 +1,3 @@
+- I'm building agentic automation into my daily workflow — starting with this very profile, which now maintains itself through a Claude-powered GitHub Actions pipeline.
+- I'm continuing to develop neutron imaging reduction tools like [iMars3D](https://github.com/ornlneutronimaging/iMars3D) and [mcpevent2hist](https://github.com/ornlneutronimaging/mcpevent2hist) for instrument operations at ORNL.
+- I'm exploring how AI-enhanced experimental workflows like [PLEIADES](https://github.com/lanl/PLEIADES) can change the way scattering experiments are designed and analyzed.
