@@ -1,4 +1,4 @@
-- I'm doing a deep dive on [HyperCTui](https://github.com/ornlneutronimaging/HyperCTui), tackling a batch of correctness fixes from a recent audit—from VENUS source-detector distance defaults to transposed TOF ROI sampling.
-- I'm modernizing HyperCTui's data I/O by porting away from direct NeuNorm calls toward the NeuNorm 2.0 API and adding contract tests around the cropping logic.
-- I'm reviewing and merging work across the imaging stack, including [NEREIDS](https://github.com/ornlneutronimaging/NEREIDS), [NeutronImagingScripts](https://github.com/ornlneutronimaging/NeutronImagingScripts), and [CylindricalGeometryCorrection](https://github.com/ornlneutronimaging/CylindricalGeometryCorrection).
-- I'm also tinkering with my own [profile repo](https://github.com/KedoKudo/KedoKudo) on the side.
+- Actively developing [iBeatles](https://github.com/ornlneutronimaging/iBeatles), where I'm porting the neunorm 2.0 core, adding normalization contract tests, and tightening up packaging/CI workflows.
+- Polishing [NeutronImagingScripts](https://github.com/ornlneutronimaging/NeutronImagingScripts) with a fresh release, source-distribution fixes, and an MIT licensing decision.
+- Working through documentation hygiene and metadata cleanup in [NEREIDS](https://github.com/ornlneutronimaging/NEREIDS) to keep the project tidy and well-described.
+- Reviewing and refining [HyperCTui](https://github.com/ornlneutronimaging/HyperCTui) through a round of pull request reviews and merges.

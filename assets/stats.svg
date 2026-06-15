@@ -34,7 +34,7 @@
   <rect x="0" y="0" width="720" height="4" fill="url(#accent)" clip-path="url(#card-clip)" />
   <g class="fade">
     <text x="28" y="48" class="title">KedoKudo · GitHub Snapshot</text>
-    <text x="692" y="48" text-anchor="end" class="date">Jun 14, 2026</text>
+    <text x="692" y="48" text-anchor="end" class="date">Jun 15, 2026</text>
   </g>
   <g class="fade" style="animation-delay: 0.1s"><text x="28" y="100" class="number">36</text><text x="28" y="121" class="label">Followers</text></g>
 <g class="fade" style="animation-delay: 0.2s"><text x="194" y="100" class="number">90</text><text x="194" y="121" class="label">Following</text></g>
