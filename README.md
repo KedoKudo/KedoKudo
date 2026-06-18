@@ -61,7 +61,7 @@ I work at the intersection of **neutron scattering science**, **AI research**, a
   <img src="assets/stats.svg" alt="GitHub snapshot showing followers, repository and star counts plus top languages." />
 </p>
 
-<p><sub>Last sync: Wednesday, June 17, 2026 at 6:03 AM CDT · 36 followers · 222 repos tracked (197 public) · 68 stars · Top languages: C++ (32%), Python (30.7%), HTML (25.2%), IGOR Pro (5%), Rust (2%), TypeScript (1.7%)</sub></p>
+<p><sub>Last sync: Thursday, June 18, 2026 at 5:51 AM CDT · 36 followers · 222 repos tracked (197 public) · 68 stars · Top languages: C++ (32%), Python (30.7%), HTML (25.2%), IGOR Pro (5%), Rust (2%), TypeScript (1.7%)</sub></p>
 
 <p align="center">
   <picture>
@@ -87,4 +87,4 @@ This README is not edited by hand — it's the output of a small agentic pipelin
 [![ORNL](https://img.shields.io/badge/ORNL-Profile-orange?style=flat&logo=atom)](https://www.ornl.gov/staff-profile/chen-zhang)
 [![ORCID](https://img.shields.io/badge/ORCID-Profile-green?style=flat&logo=orcid)](https://orcid.org/0000-0001-8374-4467)
 
-<sub>Last updated on Wednesday, June 17, 2026 at 6:03 AM CDT.</sub>
+<sub>Last updated on Thursday, June 18, 2026 at 5:51 AM CDT.</sub>
