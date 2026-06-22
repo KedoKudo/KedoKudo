@@ -1,4 +1,4 @@
-- Actively developing [iBeatles](https://github.com/ornlneutronimaging/iBeatles), where I'm porting the neunorm 2.0 core, adding normalization contract tests, and tightening up packaging/CI workflows.
-- Polishing [NeutronImagingScripts](https://github.com/ornlneutronimaging/NeutronImagingScripts) with a fresh release, source-distribution fixes, and an MIT licensing decision.
-- Working through documentation hygiene and metadata cleanup in [NEREIDS](https://github.com/ornlneutronimaging/NEREIDS) to keep the project tidy and well-described.
-- Reviewing and refining [HyperCTui](https://github.com/ornlneutronimaging/HyperCTui) through a round of pull request reviews and merges.
+- Building out [NEREIDS](https://github.com/ornlneutronimaging/NEREIDS), where I'm currently developing new resolution models for neutron imaging analysis.
+- Hardening [NeuNorm](https://github.com/ornlneutronimaging/NeuNorm) by squashing bugs in transmission uncertainty, energy/wavelength binning, and HDF5 writing while preparing it for archival with Zenodo DOIs and ORCIDs.
+- Refining [bm3dornl](https://github.com/ornlneutronimaging/bm3dornl), syncing BM3D denoising defaults across its Python, Rust, GUI, and docs and improving large-volume TIFF stack export.
+- Helping improve open scientific software quality by reviewing JOSS onboarding, CI, and reproducibility gaps in [molass-library](https://github.com/biosaxs-dev/molass-library).
