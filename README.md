@@ -37,6 +37,7 @@ I work at the intersection of **neutron scattering science**, **AI research**, a
 **AI for science**
 
 - [PLEIADES](https://github.com/lanl/PLEIADES) – LANL/ORNL research on scalable, AI-enhanced experimental workflows.
+- [NEREIDS](https://github.com/ornlneutronimaging/NEREIDS) – MCP-enabled neutron imaging analysis with new resolution models for AI-assisted workflows.
 
 ## 🛠️ Toolbox
 
