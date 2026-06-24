@@ -37,7 +37,6 @@ I work at the intersection of **neutron scattering science**, **AI research**, a
 **AI for science**
 
 - [PLEIADES](https://github.com/lanl/PLEIADES) – LANL/ORNL research on scalable, AI-enhanced experimental workflows.
-- [DocSage](https://github.com/KedoKudo/DocSage) – Lightweight knowledge assistant for technical documentation and lab notebooks.
 
 ## 🛠️ Toolbox
 
