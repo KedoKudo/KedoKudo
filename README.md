@@ -17,10 +17,10 @@ I work at the intersection of **neutron scattering science**, **AI research**, a
 ## 🤖 Currently Exploring
 
 <!-- AI-HIGHLIGHT:START -->
-- Building out [NEREIDS](https://github.com/ornlneutronimaging/NEREIDS), where I'm currently developing new resolution models for neutron imaging analysis.
-- Hardening [NeuNorm](https://github.com/ornlneutronimaging/NeuNorm) by squashing bugs in transmission uncertainty, energy/wavelength binning, and HDF5 writing while preparing it for archival with Zenodo DOIs and ORCIDs.
-- Refining [bm3dornl](https://github.com/ornlneutronimaging/bm3dornl), syncing BM3D denoising defaults across its Python, Rust, GUI, and docs and improving large-volume TIFF stack export.
-- Helping improve open scientific software quality by reviewing JOSS onboarding, CI, and reproducibility gaps in [molass-library](https://github.com/biosaxs-dev/molass-library).
+- I'm leading the major 2.0 rewrite of [NeuNorm](https://github.com/ornlneutronimaging/NeuNorm), tackling code smells, optimizing data types (float32 over float64), and tightening the normalization API for neutron imaging.
+- I'm running a documentation-accuracy sweep across NeuNorm to reconcile workflow guides, autodoc docstrings, and references with the shipped code following the v2.1.0 release.
+- I'm porting [iBeatles](https://github.com/ornlneutronimaging/iBeatles) to the new NeuNorm 2.0 API while keeping a pre-2.0 pin as a stopgap.
+- I'm also contributing to open science as a reviewer for [JOSS](https://github.com/openjournals/joss-reviews) and pushing updates to [HyperCTui](https://github.com/ornlneutronimaging/HyperCTui) and [NEREIDS](https://github.com/ornlneutronimaging/NEREIDS).
 <!-- AI-HIGHLIGHT:END -->
 
 <sub>✨ This section is written by <a href="https://www.anthropic.com/claude">Claude</a> (`anthropic/claude-opus-4.8` via <a href="https://openrouter.ai">OpenRouter</a>), which reviews my recent public GitHub activity on a schedule and summarizes what I've been working on. See <a href="#%EF%B8%8F-how-this-profile-works">how this profile works</a>.</sub>
@@ -61,7 +61,7 @@ I work at the intersection of **neutron scattering science**, **AI research**, a
   <img src="assets/stats.svg" alt="GitHub snapshot showing followers, repository and star counts plus top languages." />
 </p>
 
-<p><sub>Last sync: Sunday, June 28, 2026 at 5:14 AM CDT · 37 followers · 221 repos tracked (194 public) · 67 stars · Top languages: C++ (32%), Python (30.8%), HTML (25.1%), IGOR Pro (5%), Rust (2.1%), TypeScript (1.7%)</sub></p>
+<p><sub>Last sync: Monday, June 29, 2026 at 5:41 AM CDT · 37 followers · 221 repos tracked (194 public) · 67 stars · Top languages: C++ (32%), Python (30.8%), HTML (25.1%), IGOR Pro (5%), Rust (2.1%), TypeScript (1.7%)</sub></p>
 
 <p align="center">
   <picture>
@@ -87,4 +87,4 @@ This README is not edited by hand — it's the output of a small agentic pipelin
 [![ORNL](https://img.shields.io/badge/ORNL-Profile-orange?style=flat&logo=atom)](https://www.ornl.gov/staff-profile/chen-zhang)
 [![ORCID](https://img.shields.io/badge/ORCID-Profile-green?style=flat&logo=orcid)](https://orcid.org/0000-0001-8374-4467)
 
-<sub>Last updated on Sunday, June 28, 2026 at 5:14 AM CDT.</sub>
+<sub>Last updated on Monday, June 29, 2026 at 5:41 AM CDT.</sub>

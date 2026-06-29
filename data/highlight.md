@@ -1,4 +1,4 @@
-- Building out [NEREIDS](https://github.com/ornlneutronimaging/NEREIDS), where I'm currently developing new resolution models for neutron imaging analysis.
-- Hardening [NeuNorm](https://github.com/ornlneutronimaging/NeuNorm) by squashing bugs in transmission uncertainty, energy/wavelength binning, and HDF5 writing while preparing it for archival with Zenodo DOIs and ORCIDs.
-- Refining [bm3dornl](https://github.com/ornlneutronimaging/bm3dornl), syncing BM3D denoising defaults across its Python, Rust, GUI, and docs and improving large-volume TIFF stack export.
-- Helping improve open scientific software quality by reviewing JOSS onboarding, CI, and reproducibility gaps in [molass-library](https://github.com/biosaxs-dev/molass-library).
+- I'm leading the major 2.0 rewrite of [NeuNorm](https://github.com/ornlneutronimaging/NeuNorm), tackling code smells, optimizing data types (float32 over float64), and tightening the normalization API for neutron imaging.
+- I'm running a documentation-accuracy sweep across NeuNorm to reconcile workflow guides, autodoc docstrings, and references with the shipped code following the v2.1.0 release.
+- I'm porting [iBeatles](https://github.com/ornlneutronimaging/iBeatles) to the new NeuNorm 2.0 API while keeping a pre-2.0 pin as a stopgap.
+- I'm also contributing to open science as a reviewer for [JOSS](https://github.com/openjournals/joss-reviews) and pushing updates to [HyperCTui](https://github.com/ornlneutronimaging/HyperCTui) and [NEREIDS](https://github.com/ornlneutronimaging/NEREIDS).
