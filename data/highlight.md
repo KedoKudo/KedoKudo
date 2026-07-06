@@ -1,4 +1,4 @@
-- I'm leading the major 2.0 rewrite of [NeuNorm](https://github.com/ornlneutronimaging/NeuNorm), tackling code smells, optimizing data types (float32 over float64), and tightening the normalization API for neutron imaging.
-- I'm running a documentation-accuracy sweep across NeuNorm to reconcile workflow guides, autodoc docstrings, and references with the shipped code following the v2.1.0 release.
-- I'm porting [iBeatles](https://github.com/ornlneutronimaging/iBeatles) to the new NeuNorm 2.0 API while keeping a pre-2.0 pin as a stopgap.
-- I'm also contributing to open science as a reviewer for [JOSS](https://github.com/openjournals/joss-reviews) and pushing updates to [HyperCTui](https://github.com/ornlneutronimaging/HyperCTui) and [NEREIDS](https://github.com/ornlneutronimaging/NEREIDS).
+- Most of my energy right now is going into [NEREIDS](https://github.com/ornlneutronimaging/NEREIDS), where I'm building out neutron transmission fitting features like a bounded multiplicative baseline model, physics-complete Ikeda-Carpenter calibration, and TIFF preprocessing.
+- I'm hardening the imaging pipeline's robustness — tackling dead-pixel detection for intermittent/hot pixels and chasing down subtle issues like baseline `E_ref` being computed on the full grid instead of the active fit window.
+- I've been refining fitter flexibility, adding per-parameter freezing and support for joint `fit_energy_scale` and `fit_temperature` fitting with better `calibrate_energy` performance.
+- On the maintenance side, I'm keeping [HyperCTui](https://github.com/ornlneutronimaging/HyperCTui) and [timepix_geometry_correction](https://github.com/ornlneutronimaging/timepix_geometry_correction) secure by triaging Grype CVE findings for Python 3.12.

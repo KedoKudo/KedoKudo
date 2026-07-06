@@ -17,10 +17,10 @@ I work at the intersection of **neutron scattering science**, **AI research**, a
 ## 🤖 Currently Exploring
 
 <!-- AI-HIGHLIGHT:START -->
-- I'm leading the major 2.0 rewrite of [NeuNorm](https://github.com/ornlneutronimaging/NeuNorm), tackling code smells, optimizing data types (float32 over float64), and tightening the normalization API for neutron imaging.
-- I'm running a documentation-accuracy sweep across NeuNorm to reconcile workflow guides, autodoc docstrings, and references with the shipped code following the v2.1.0 release.
-- I'm porting [iBeatles](https://github.com/ornlneutronimaging/iBeatles) to the new NeuNorm 2.0 API while keeping a pre-2.0 pin as a stopgap.
-- I'm also contributing to open science as a reviewer for [JOSS](https://github.com/openjournals/joss-reviews) and pushing updates to [HyperCTui](https://github.com/ornlneutronimaging/HyperCTui) and [NEREIDS](https://github.com/ornlneutronimaging/NEREIDS).
+- Most of my energy right now is going into [NEREIDS](https://github.com/ornlneutronimaging/NEREIDS), where I'm building out neutron transmission fitting features like a bounded multiplicative baseline model, physics-complete Ikeda-Carpenter calibration, and TIFF preprocessing.
+- I'm hardening the imaging pipeline's robustness — tackling dead-pixel detection for intermittent/hot pixels and chasing down subtle issues like baseline `E_ref` being computed on the full grid instead of the active fit window.
+- I've been refining fitter flexibility, adding per-parameter freezing and support for joint `fit_energy_scale` and `fit_temperature` fitting with better `calibrate_energy` performance.
+- On the maintenance side, I'm keeping [HyperCTui](https://github.com/ornlneutronimaging/HyperCTui) and [timepix_geometry_correction](https://github.com/ornlneutronimaging/timepix_geometry_correction) secure by triaging Grype CVE findings for Python 3.12.
 <!-- AI-HIGHLIGHT:END -->
 
 <sub>✨ This section is written by <a href="https://www.anthropic.com/claude">Claude</a> (`anthropic/claude-opus-4.8` via <a href="https://openrouter.ai">OpenRouter</a>), which reviews my recent public GitHub activity on a schedule and summarizes what I've been working on. See <a href="#%EF%B8%8F-how-this-profile-works">how this profile works</a>.</sub>
@@ -61,7 +61,7 @@ I work at the intersection of **neutron scattering science**, **AI research**, a
   <img src="assets/stats.svg" alt="GitHub snapshot showing followers, repository and star counts plus top languages." />
 </p>
 
-<p><sub>Last sync: Sunday, July 5, 2026 at 6:14 AM CDT · 38 followers · 221 repos tracked (194 public) · 67 stars · Top languages: C++ (31.9%), Python (30.8%), HTML (25.1%), IGOR Pro (5%), Rust (2.1%), TypeScript (1.7%)</sub></p>
+<p><sub>Last sync: Monday, July 6, 2026 at 5:38 AM CDT · 38 followers · 221 repos tracked (194 public) · 67 stars · Top languages: C++ (31.9%), Python (30.7%), HTML (25%), IGOR Pro (4.9%), Rust (2.3%), TypeScript (1.7%)</sub></p>
 
 <p align="center">
   <picture>
@@ -87,4 +87,4 @@ This README is not edited by hand — it's the output of a small agentic pipelin
 [![ORNL](https://img.shields.io/badge/ORNL-Profile-orange?style=flat&logo=atom)](https://www.ornl.gov/staff-profile/chen-zhang)
 [![ORCID](https://img.shields.io/badge/ORCID-Profile-green?style=flat&logo=orcid)](https://orcid.org/0000-0001-8374-4467)
 
-<sub>Last updated on Sunday, July 5, 2026 at 6:14 AM CDT.</sub>
+<sub>Last updated on Monday, July 6, 2026 at 5:38 AM CDT.</sub>
