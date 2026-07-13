@@ -17,10 +17,9 @@ I work at the intersection of **neutron scattering science**, **AI research**, a
 ## 🤖 Currently Exploring
 
 <!-- AI-HIGHLIGHT:START -->
-- Most of my energy right now is going into [NEREIDS](https://github.com/ornlneutronimaging/NEREIDS), where I'm building out neutron transmission fitting features like a bounded multiplicative baseline model, physics-complete Ikeda-Carpenter calibration, and TIFF preprocessing.
-- I'm hardening the imaging pipeline's robustness — tackling dead-pixel detection for intermittent/hot pixels and chasing down subtle issues like baseline `E_ref` being computed on the full grid instead of the active fit window.
-- I've been refining fitter flexibility, adding per-parameter freezing and support for joint `fit_energy_scale` and `fit_temperature` fitting with better `calibrate_energy` performance.
-- On the maintenance side, I'm keeping [HyperCTui](https://github.com/ornlneutronimaging/HyperCTui) and [timepix_geometry_correction](https://github.com/ornlneutronimaging/timepix_geometry_correction) secure by triaging Grype CVE findings for Python 3.12.
+- Driving active development on [NEREIDS](https://github.com/ornlneutronimaging/NEREIDS), where I'm merging pull requests, triaging a wave of work-tracking issues, and tackling tasks like clippy fixes, CI action pinning, and instrument calibration research.
+- Sharpening my Rust tooling in [rustpix](https://github.com/ornlneutronimaging/rustpix) by cleaning up clippy warnings, adding an f32 fallback, and polishing the README with a DOI reference.
+- Modernizing [braggedgemodeling](https://github.com/ornlneutronimaging/braggedgemodeling) with an updated pre-commit and Ruff-based linting setup for a cleaner development workflow.
 <!-- AI-HIGHLIGHT:END -->
 
 <sub>✨ This section is written by <a href="https://www.anthropic.com/claude">Claude</a> (`anthropic/claude-opus-4.8` via <a href="https://openrouter.ai">OpenRouter</a>), which reviews my recent public GitHub activity on a schedule and summarizes what I've been working on. See <a href="#%EF%B8%8F-how-this-profile-works">how this profile works</a>.</sub>
@@ -61,7 +60,7 @@ I work at the intersection of **neutron scattering science**, **AI research**, a
   <img src="assets/stats.svg" alt="GitHub snapshot showing followers, repository and star counts plus top languages." />
 </p>
 
-<p><sub>Last sync: Sunday, July 12, 2026 at 5:46 AM CDT · 37 followers · 220 repos tracked (194 public) · 67 stars · Top languages: C++ (31.6%), Python (30.5%), HTML (24.8%), IGOR Pro (4.9%), Rust (2.4%), TypeScript (1.7%)</sub></p>
+<p><sub>Last sync: Monday, July 13, 2026 at 7:08 AM CDT · 37 followers · 220 repos tracked (194 public) · 67 stars · Top languages: C++ (31.6%), Python (30.5%), HTML (24.8%), IGOR Pro (4.9%), Rust (2.4%), TypeScript (1.7%)</sub></p>
 
 <p align="center">
   <picture>
@@ -87,4 +86,4 @@ This README is not edited by hand — it's the output of a small agentic pipelin
 [![ORNL](https://img.shields.io/badge/ORNL-Profile-orange?style=flat&logo=atom)](https://www.ornl.gov/staff-profile/chen-zhang)
 [![ORCID](https://img.shields.io/badge/ORCID-Profile-green?style=flat&logo=orcid)](https://orcid.org/0000-0001-8374-4467)
 
-<sub>Last updated on Sunday, July 12, 2026 at 5:46 AM CDT.</sub>
+<sub>Last updated on Monday, July 13, 2026 at 7:08 AM CDT.</sub>
