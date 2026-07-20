@@ -13,7 +13,11 @@ jobs:
       contents: write
     steps:
       - name: Generate snake animations
-        uses: Platane/snk/svg-only@v3
+        # Pinned to the KedoKudo/snk fork: upstream Platane/snk@v3 issues a
+        # rangeless contributionsCollection query that GitHub's GraphQL API now
+        # rejects with RESOURCE_LIMITS_EXCEEDED for this account. The fork requests
+        # an explicit "today minus one year to today" range. See KedoKudo/snk@ranged-fetch.
+        uses: KedoKudo/snk/svg-only@630f9244e601cf6e543bdca79ddcfdea21e6508f
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
