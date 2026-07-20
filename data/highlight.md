@@ -1,3 +1,4 @@
-- Driving active development on [NEREIDS](https://github.com/ornlneutronimaging/NEREIDS), where I'm merging pull requests, triaging a wave of work-tracking issues, and tackling tasks like clippy fixes, CI action pinning, and instrument calibration research.
-- Sharpening my Rust tooling in [rustpix](https://github.com/ornlneutronimaging/rustpix) by cleaning up clippy warnings, adding an f32 fallback, and polishing the README with a DOI reference.
-- Modernizing [braggedgemodeling](https://github.com/ornlneutronimaging/braggedgemodeling) with an updated pre-commit and Ruff-based linting setup for a cleaner development workflow.
+- Diving deep into [NEREIDS](https://github.com/ornlneutronimaging/NEREIDS), where I'm reviewing pull requests, triaging issues, and building out VENUS gate physics on a dedicated feature branch.
+- Adding mask/ROI capabilities and cutting new releases for [NeuNorm](https://github.com/ornlneutronimaging/NeuNorm), our neutron imaging normalization toolkit.
+- Modernizing [braggedgemodeling](https://github.com/ornlneutronimaging/braggedgemodeling) with license fixes and post-release cleanup, alongside a release-workflow refresh for [iBeatles](https://github.com/ornlneutronimaging/iBeatles).
+- Contributing upstream to [mantid](https://github.com/mantidproject/mantid) and refining shared standards in [python_project_template](https://github.com/neutrons/python_project_template).

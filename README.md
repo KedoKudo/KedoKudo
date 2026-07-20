@@ -17,9 +17,10 @@ I work at the intersection of **neutron scattering science**, **AI research**, a
 ## 🤖 Currently Exploring
 
 <!-- AI-HIGHLIGHT:START -->
-- Driving active development on [NEREIDS](https://github.com/ornlneutronimaging/NEREIDS), where I'm merging pull requests, triaging a wave of work-tracking issues, and tackling tasks like clippy fixes, CI action pinning, and instrument calibration research.
-- Sharpening my Rust tooling in [rustpix](https://github.com/ornlneutronimaging/rustpix) by cleaning up clippy warnings, adding an f32 fallback, and polishing the README with a DOI reference.
-- Modernizing [braggedgemodeling](https://github.com/ornlneutronimaging/braggedgemodeling) with an updated pre-commit and Ruff-based linting setup for a cleaner development workflow.
+- Diving deep into [NEREIDS](https://github.com/ornlneutronimaging/NEREIDS), where I'm reviewing pull requests, triaging issues, and building out VENUS gate physics on a dedicated feature branch.
+- Adding mask/ROI capabilities and cutting new releases for [NeuNorm](https://github.com/ornlneutronimaging/NeuNorm), our neutron imaging normalization toolkit.
+- Modernizing [braggedgemodeling](https://github.com/ornlneutronimaging/braggedgemodeling) with license fixes and post-release cleanup, alongside a release-workflow refresh for [iBeatles](https://github.com/ornlneutronimaging/iBeatles).
+- Contributing upstream to [mantid](https://github.com/mantidproject/mantid) and refining shared standards in [python_project_template](https://github.com/neutrons/python_project_template).
 <!-- AI-HIGHLIGHT:END -->
 
 <sub>✨ This section is written by <a href="https://www.anthropic.com/claude">Claude</a> (`anthropic/claude-opus-4.8` via <a href="https://openrouter.ai">OpenRouter</a>), which reviews my recent public GitHub activity on a schedule and summarizes what I've been working on. See <a href="#%EF%B8%8F-how-this-profile-works">how this profile works</a>.</sub>
@@ -60,7 +61,7 @@ I work at the intersection of **neutron scattering science**, **AI research**, a
   <img src="assets/stats.svg" alt="GitHub snapshot showing followers, repository and star counts plus top languages." />
 </p>
 
-<p><sub>Last sync: Sunday, July 19, 2026 at 5:46 AM CDT · 37 followers · 221 repos tracked (194 public) · 67 stars · Top languages: C++ (31.9%), Python (30.7%), HTML (25%), IGOR Pro (4.9%), Rust (2.4%), TypeScript (1.7%)</sub></p>
+<p><sub>Last sync: Monday, July 20, 2026 at 6:47 AM CDT · 38 followers · 221 repos tracked (194 public) · 67 stars · Top languages: C++ (31.9%), Python (30.7%), HTML (25%), IGOR Pro (4.9%), Rust (2.4%), TypeScript (1.7%)</sub></p>
 
 <p align="center">
   <picture>
@@ -86,4 +87,4 @@ This README is not edited by hand — it's the output of a small agentic pipelin
 [![ORNL](https://img.shields.io/badge/ORNL-Profile-orange?style=flat&logo=atom)](https://www.ornl.gov/staff-profile/chen-zhang)
 [![ORCID](https://img.shields.io/badge/ORCID-Profile-green?style=flat&logo=orcid)](https://orcid.org/0000-0001-8374-4467)
 
-<sub>Last updated on Sunday, July 19, 2026 at 5:46 AM CDT.</sub>
+<sub>Last updated on Monday, July 20, 2026 at 6:47 AM CDT.</sub>
