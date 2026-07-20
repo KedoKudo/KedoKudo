@@ -70,7 +70,7 @@ I work at the intersection of **neutron scattering science**, **AI research**, a
   </picture>
 </p>
 
-<p align="center"><sub>🐍 regenerated daily from my contribution graph by <a href="https://github.com/Platane/snk">Platane/snk</a></sub></p>
+<p align="center"><sub>🐍 regenerated daily from my contribution graph by <a href="https://github.com/miccy/snake-evolution">snake-evolution</a></sub></p>
 
 ## ⚙️ How This Profile Works
 
