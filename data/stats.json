@@ -1,6 +1,6 @@
 {
   "username": "KedoKudo",
-  "generatedAt": "2026-07-23T11:21:52.367256Z",
+  "generatedAt": "2026-07-24T11:14:38.955801Z",
   "followers": 39,
   "following": 92,
   "publicRepos": 195,
@@ -10,12 +10,12 @@
     {
       "language": "C++",
       "bytes": 80559948,
-      "percent": 31.9
+      "percent": 31.8
     },
     {
       "language": "Python",
-      "bytes": 77509815,
-      "percent": 30.6
+      "bytes": 77581013,
+      "percent": 30.7
     },
     {
       "language": "HTML",
@@ -38,7 +38,7 @@
       "percent": 1.7
     }
   ],
-  "topLanguagesText": "C++ (31.9%), Python (30.6%), HTML (25%), IGOR Pro (4.9%), Rust (2.4%), TypeScript (1.7%)",
+  "topLanguagesText": "C++ (31.8%), Python (30.7%), HTML (25%), IGOR Pro (4.9%), Rust (2.4%), TypeScript (1.7%)",
   "languageSampledRepos": 200,
   "orgsIncluded": [
     "ornlneutronimaging"
