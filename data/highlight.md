@@ -1,4 +1,4 @@
-- Diving deep into [NEREIDS](https://github.com/ornlneutronimaging/NEREIDS), where I'm reviewing pull requests, triaging issues, and building out VENUS gate physics on a dedicated feature branch.
-- Adding mask/ROI capabilities and cutting new releases for [NeuNorm](https://github.com/ornlneutronimaging/NeuNorm), our neutron imaging normalization toolkit.
-- Modernizing [braggedgemodeling](https://github.com/ornlneutronimaging/braggedgemodeling) with license fixes and post-release cleanup, alongside a release-workflow refresh for [iBeatles](https://github.com/ornlneutronimaging/iBeatles).
-- Contributing upstream to [mantid](https://github.com/mantidproject/mantid) and refining shared standards in [python_project_template](https://github.com/neutrons/python_project_template).
+- Deep in the weeds on [NeuNorm](https://github.com/ornlneutronimaging/NeuNorm), where I've been adding rebin reduction modes, supporting more complex ROI regions, and fixing normalization edge cases around TIFF-to-spectra matching.
+- Improving [NEREIDS](https://github.com/ornlneutronimaging/NEREIDS) through a steady stream of pull requests and branch cleanups for our neutron imaging workflows.
+- Polishing the Rust-based [bm3dornl](https://github.com/ornlneutronimaging/bm3dornl) denoising tool, recently sorting out GUI formatting with `rustfmt`.
+- Keeping shared infrastructure healthy across [RootPlantProcessing](https://github.com/ornlneutronimaging/RootPlantProcessing) and the [python_project_template](https://github.com/neutrons/python_project_template), including lockfile and packaging fixes.
