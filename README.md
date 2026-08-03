@@ -17,10 +17,10 @@ I work at the intersection of **neutron scattering science**, **AI research**, a
 ## 🤖 Currently Exploring
 
 <!-- AI-HIGHLIGHT:START -->
-- Deep in the weeds on [NeuNorm](https://github.com/ornlneutronimaging/NeuNorm), where I've been adding rebin reduction modes, supporting more complex ROI regions, and fixing normalization edge cases around TIFF-to-spectra matching.
-- Improving [NEREIDS](https://github.com/ornlneutronimaging/NEREIDS) through a steady stream of pull requests and branch cleanups for our neutron imaging workflows.
-- Polishing the Rust-based [bm3dornl](https://github.com/ornlneutronimaging/bm3dornl) denoising tool, recently sorting out GUI formatting with `rustfmt`.
-- Keeping shared infrastructure healthy across [RootPlantProcessing](https://github.com/ornlneutronimaging/RootPlantProcessing) and the [python_project_template](https://github.com/neutrons/python_project_template), including lockfile and packaging fixes.
+- Investing heavily in [NeuNorm](https://github.com/ornlneutronimaging/NeuNorm) lately, adding progress-reporting and feedback features to make its neutron imaging normalization workflows more transparent.
+- Building out [NEREIDS](https://github.com/ornlneutronimaging/NEREIDS), including a new documentation branch mapping out its processing pipeline.
+- Contributing to [Mantid](https://github.com/mantidproject/mantid) and refining the shared [python_project_template](https://github.com/neutrons/python_project_template) that underpins many of our neutron software projects.
+- Exploring Rust for high-performance detector processing through [rustpix](https://github.com/ornlneutronimaging/rustpix), alongside ongoing work on [RootPlantProcessing](https://github.com/ornlneutronimaging/RootPlantProcessing).
 <!-- AI-HIGHLIGHT:END -->
 
 <sub>✨ This section is written by <a href="https://www.anthropic.com/claude">Claude</a> (`anthropic/claude-opus-4.8` via <a href="https://openrouter.ai">OpenRouter</a>), which reviews my recent public GitHub activity on a schedule and summarizes what I've been working on. See <a href="#%EF%B8%8F-how-this-profile-works">how this profile works</a>.</sub>
@@ -61,7 +61,7 @@ I work at the intersection of **neutron scattering science**, **AI research**, a
   <img src="assets/stats.svg" alt="GitHub snapshot showing followers, repository and star counts plus top languages." />
 </p>
 
-<p><sub>Last sync: Sunday, August 2, 2026 at 5:52 AM CDT · 40 followers · 222 repos tracked (195 public) · 69 stars · Top languages: C++ (31.8%), Python (30.7%), HTML (25%), IGOR Pro (4.9%), Rust (2.4%), TypeScript (1.7%)</sub></p>
+<p><sub>Last sync: Monday, August 3, 2026 at 7:26 AM CDT · 40 followers · 222 repos tracked (195 public) · 69 stars · Top languages: C++ (31.8%), Python (30.7%), HTML (25%), IGOR Pro (4.9%), Rust (2.4%), TypeScript (1.7%)</sub></p>
 
 <p align="center">
   <picture>
@@ -87,4 +87,4 @@ This README is not edited by hand — it's the output of a small agentic pipelin
 [![ORNL](https://img.shields.io/badge/ORNL-Profile-orange?style=flat&logo=atom)](https://www.ornl.gov/staff-profile/chen-zhang)
 [![ORCID](https://img.shields.io/badge/ORCID-Profile-green?style=flat&logo=orcid)](https://orcid.org/0000-0001-8374-4467)
 
-<sub>Last updated on Sunday, August 2, 2026 at 5:52 AM CDT.</sub>
+<sub>Last updated on Monday, August 3, 2026 at 7:26 AM CDT.</sub>

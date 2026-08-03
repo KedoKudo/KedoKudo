@@ -1,4 +1,4 @@
-- Deep in the weeds on [NeuNorm](https://github.com/ornlneutronimaging/NeuNorm), where I've been adding rebin reduction modes, supporting more complex ROI regions, and fixing normalization edge cases around TIFF-to-spectra matching.
-- Improving [NEREIDS](https://github.com/ornlneutronimaging/NEREIDS) through a steady stream of pull requests and branch cleanups for our neutron imaging workflows.
-- Polishing the Rust-based [bm3dornl](https://github.com/ornlneutronimaging/bm3dornl) denoising tool, recently sorting out GUI formatting with `rustfmt`.
-- Keeping shared infrastructure healthy across [RootPlantProcessing](https://github.com/ornlneutronimaging/RootPlantProcessing) and the [python_project_template](https://github.com/neutrons/python_project_template), including lockfile and packaging fixes.
+- Investing heavily in [NeuNorm](https://github.com/ornlneutronimaging/NeuNorm) lately, adding progress-reporting and feedback features to make its neutron imaging normalization workflows more transparent.
+- Building out [NEREIDS](https://github.com/ornlneutronimaging/NEREIDS), including a new documentation branch mapping out its processing pipeline.
+- Contributing to [Mantid](https://github.com/mantidproject/mantid) and refining the shared [python_project_template](https://github.com/neutrons/python_project_template) that underpins many of our neutron software projects.
+- Exploring Rust for high-performance detector processing through [rustpix](https://github.com/ornlneutronimaging/rustpix), alongside ongoing work on [RootPlantProcessing](https://github.com/ornlneutronimaging/RootPlantProcessing).
