@@ -1,7 +1,7 @@
 {
   "username": "KedoKudo",
-  "generatedAt": "2026-08-07T10:14:06.909117Z",
-  "followers": 43,
+  "generatedAt": "2026-08-08T09:57:13.465122Z",
+  "followers": 42,
   "following": 93,
   "publicRepos": 196,
   "trackedRepos": 223,
@@ -14,7 +14,7 @@
     },
     {
       "language": "Python",
-      "bytes": 77700609,
+      "bytes": 77710843,
       "percent": 30.6
     },
     {
@@ -29,7 +29,7 @@
     },
     {
       "language": "Rust",
-      "bytes": 6109885,
+      "bytes": 5975171,
       "percent": 2.4
     },
     {
