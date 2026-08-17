@@ -17,10 +17,10 @@ I work at the intersection of **neutron scattering science**, **AI research**, a
 ## 🤖 Currently Exploring
 
 <!-- AI-HIGHLIGHT:START -->
-- Deep in [NEREIDS](https://github.com/ornlneutronimaging/NEREIDS), where I've been refining resolution kernels, removing dead physics from the URR/RML paths, and weighing mode- versus centroid-anchoring for cross-family position bias.
-- Modernizing [NeuNorm](https://github.com/ornlneutronimaging/NeuNorm) with a moving-window feature and Sphinx 9 autodoc fixes to keep the normalization tooling in good shape.
-- Tending to a broad slate of neutron imaging projects—including [HyperCTui](https://github.com/ornlneutronimaging/HyperCTui), [bm3dornl](https://github.com/ornlneutronimaging/bm3dornl), [iBeatles](https://github.com/ornlneutronimaging/iBeatles), and [RootPlantProcessing](https://github.com/ornlneutronimaging/RootPlantProcessing)—alongside contributions to [Mantid](https://github.com/mantidproject/mantid).
-- Keeping shared infrastructure current through the [python_project_template](https://github.com/neutrons/python_project_template) that underpins much of our scientific software.
+- Actively modernizing [NeuNorm](https://github.com/ornlneutronimaging/NeuNorm), our neutron imaging normalization library, with a steady stream of merged PRs, release work, and progress-feedback improvements.
+- Running a broad maintenance and release-hygiene sweep across the ORNL neutron imaging ecosystem, touching projects like [braggedgemodeling](https://github.com/ornlneutronimaging/braggedgemodeling), [CylindricalGeometryCorrection](https://github.com/ornlneutronimaging/CylindricalGeometryCorrection), [iBeatles](https://github.com/ornlneutronimaging/iBeatles), and [bm3dornl](https://github.com/ornlneutronimaging/bm3dornl).
+- Refining our shared [python_project_template](https://github.com/neutrons/python_project_template) to keep scientific software scaffolding and best practices consistent across teams.
+- Contributing to [Mantid](https://github.com/mantidproject/mantid) and advancing tools like [NEREIDS](https://github.com/ornlneutronimaging/NEREIDS) as part of ongoing neutron scattering software development.
 <!-- AI-HIGHLIGHT:END -->
 
 <sub>✨ This section is written by <a href="https://www.anthropic.com/claude">Claude</a> (`anthropic/claude-opus-4.8` via <a href="https://openrouter.ai">OpenRouter</a>), which reviews my recent public GitHub activity on a schedule and summarizes what I've been working on. See <a href="#%EF%B8%8F-how-this-profile-works">how this profile works</a>.</sub>
@@ -61,7 +61,7 @@ I work at the intersection of **neutron scattering science**, **AI research**, a
   <img src="assets/stats.svg" alt="GitHub snapshot showing followers, repository and star counts plus top languages." />
 </p>
 
-<p><sub>Last sync: Sunday, August 16, 2026 at 4:46 AM CDT · 42 followers · 223 repos tracked (196 public) · 69 stars · Top languages: C++ (32.2%), Python (30.6%), HTML (24.6%), IGOR Pro (4.9%), Rust (2.4%), TypeScript (1.7%)</sub></p>
+<p><sub>Last sync: Monday, August 17, 2026 at 4:43 AM CDT · 42 followers · 223 repos tracked (196 public) · 69 stars · Top languages: C++ (32.2%), Python (30.6%), HTML (24.6%), IGOR Pro (4.9%), Rust (2.4%), TypeScript (1.7%)</sub></p>
 
 <p align="center">
   <picture>
@@ -87,4 +87,4 @@ This README is not edited by hand — it's the output of a small agentic pipelin
 [![ORNL](https://img.shields.io/badge/ORNL-Profile-orange?style=flat&logo=atom)](https://www.ornl.gov/staff-profile/chen-zhang)
 [![ORCID](https://img.shields.io/badge/ORCID-Profile-green?style=flat&logo=orcid)](https://orcid.org/0000-0001-8374-4467)
 
-<sub>Last updated on Sunday, August 16, 2026 at 4:46 AM CDT.</sub>
+<sub>Last updated on Monday, August 17, 2026 at 4:43 AM CDT.</sub>
