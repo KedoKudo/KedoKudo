@@ -1,4 +1,4 @@
-- Actively modernizing [NeuNorm](https://github.com/ornlneutronimaging/NeuNorm), our neutron imaging normalization library, with a steady stream of merged PRs, release work, and progress-feedback improvements.
-- Running a broad maintenance and release-hygiene sweep across the ORNL neutron imaging ecosystem, touching projects like [braggedgemodeling](https://github.com/ornlneutronimaging/braggedgemodeling), [CylindricalGeometryCorrection](https://github.com/ornlneutronimaging/CylindricalGeometryCorrection), [iBeatles](https://github.com/ornlneutronimaging/iBeatles), and [bm3dornl](https://github.com/ornlneutronimaging/bm3dornl).
-- Refining our shared [python_project_template](https://github.com/neutrons/python_project_template) to keep scientific software scaffolding and best practices consistent across teams.
-- Contributing to [Mantid](https://github.com/mantidproject/mantid) and advancing tools like [NEREIDS](https://github.com/ornlneutronimaging/NEREIDS) as part of ongoing neutron scattering software development.
+- Actively enhancing [NeuNorm](https://github.com/ornlneutronimaging/NeuNorm) with new capabilities like resonance mode, moving average/sum features, and progress feedback for neutron imaging normalization.
+- Building out [NEREIDS](https://github.com/ornlneutronimaging/NEREIDS), including dependency security updates such as bumping the RustSec webbrowser advisory.
+- Refining [bm3dornl](https://github.com/ornlneutronimaging/bm3dornl) for denoising work, including a JOSS review and fixing test data cloning and authentication.
+- Maintaining shared infrastructure via the [python_project_template](https://github.com/neutrons/python_project_template), tackling packaging concerns like the hatch/virtualenv version cap.

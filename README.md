@@ -17,10 +17,10 @@ I work at the intersection of **neutron scattering science**, **AI research**, a
 ## 🤖 Currently Exploring
 
 <!-- AI-HIGHLIGHT:START -->
-- Actively modernizing [NeuNorm](https://github.com/ornlneutronimaging/NeuNorm), our neutron imaging normalization library, with a steady stream of merged PRs, release work, and progress-feedback improvements.
-- Running a broad maintenance and release-hygiene sweep across the ORNL neutron imaging ecosystem, touching projects like [braggedgemodeling](https://github.com/ornlneutronimaging/braggedgemodeling), [CylindricalGeometryCorrection](https://github.com/ornlneutronimaging/CylindricalGeometryCorrection), [iBeatles](https://github.com/ornlneutronimaging/iBeatles), and [bm3dornl](https://github.com/ornlneutronimaging/bm3dornl).
-- Refining our shared [python_project_template](https://github.com/neutrons/python_project_template) to keep scientific software scaffolding and best practices consistent across teams.
-- Contributing to [Mantid](https://github.com/mantidproject/mantid) and advancing tools like [NEREIDS](https://github.com/ornlneutronimaging/NEREIDS) as part of ongoing neutron scattering software development.
+- Actively enhancing [NeuNorm](https://github.com/ornlneutronimaging/NeuNorm) with new capabilities like resonance mode, moving average/sum features, and progress feedback for neutron imaging normalization.
+- Building out [NEREIDS](https://github.com/ornlneutronimaging/NEREIDS), including dependency security updates such as bumping the RustSec webbrowser advisory.
+- Refining [bm3dornl](https://github.com/ornlneutronimaging/bm3dornl) for denoising work, including a JOSS review and fixing test data cloning and authentication.
+- Maintaining shared infrastructure via the [python_project_template](https://github.com/neutrons/python_project_template), tackling packaging concerns like the hatch/virtualenv version cap.
 <!-- AI-HIGHLIGHT:END -->
 
 <sub>✨ This section is written by <a href="https://www.anthropic.com/claude">Claude</a> (`anthropic/claude-opus-4.8` via <a href="https://openrouter.ai">OpenRouter</a>), which reviews my recent public GitHub activity on a schedule and summarizes what I've been working on. See <a href="#%EF%B8%8F-how-this-profile-works">how this profile works</a>.</sub>
@@ -61,7 +61,7 @@ I work at the intersection of **neutron scattering science**, **AI research**, a
   <img src="assets/stats.svg" alt="GitHub snapshot showing followers, repository and star counts plus top languages." />
 </p>
 
-<p><sub>Last sync: Sunday, August 23, 2026 at 4:47 AM CDT · 42 followers · 223 repos tracked (196 public) · 69 stars · Top languages: C++ (32.2%), Python (30.7%), HTML (24.6%), IGOR Pro (4.9%), Rust (2.4%), TypeScript (1.7%)</sub></p>
+<p><sub>Last sync: Monday, August 24, 2026 at 4:50 AM CDT · 42 followers · 223 repos tracked (196 public) · 69 stars · Top languages: C++ (32.2%), Python (30.7%), HTML (24.6%), IGOR Pro (4.9%), Rust (2.4%), TypeScript (1.7%)</sub></p>
 
 <p align="center">
   <picture>
@@ -87,4 +87,4 @@ This README is not edited by hand — it's the output of a small agentic pipelin
 [![ORNL](https://img.shields.io/badge/ORNL-Profile-orange?style=flat&logo=atom)](https://www.ornl.gov/staff-profile/chen-zhang)
 [![ORCID](https://img.shields.io/badge/ORCID-Profile-green?style=flat&logo=orcid)](https://orcid.org/0000-0001-8374-4467)
 
-<sub>Last updated on Sunday, August 23, 2026 at 4:47 AM CDT.</sub>
+<sub>Last updated on Monday, August 24, 2026 at 4:50 AM CDT.</sub>
