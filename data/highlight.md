@@ -1,4 +1,4 @@
-- Actively enhancing [NeuNorm](https://github.com/ornlneutronimaging/NeuNorm) with new capabilities like resonance mode, moving average/sum features, and progress feedback for neutron imaging normalization.
-- Building out [NEREIDS](https://github.com/ornlneutronimaging/NEREIDS), including dependency security updates such as bumping the RustSec webbrowser advisory.
-- Refining [bm3dornl](https://github.com/ornlneutronimaging/bm3dornl) for denoising work, including a JOSS review and fixing test data cloning and authentication.
-- Maintaining shared infrastructure via the [python_project_template](https://github.com/neutrons/python_project_template), tackling packaging concerns like the hatch/virtualenv version cap.
+- Deep in the weeds on [bm3dornl](https://github.com/ornlneutronimaging/bm3dornl), refining BM3D denoising algorithms for neutron imaging by fixing noise-sigma estimation, Fourier-SVD thresholding, and multiscale auto-sigma while polishing docs for a JOSS submission.
+- Modernizing [NeuNorm](https://github.com/ornlneutronimaging/NeuNorm) with automated GitHub releases, improved spectrum ROI docstrings, and a couple of fresh releases.
+- Working on geometry-correction tooling across [CylindricalGeometryCorrection](https://github.com/ornlneutronimaging/CylindricalGeometryCorrection) and [timepix_geometry_correction](https://github.com/ornlneutronimaging/timepix_geometry_correction), alongside updates to [braggedgemodeling](https://github.com/ornlneutronimaging/braggedgemodeling) and [NEREIDS](https://github.com/ornlneutronimaging/NEREIDS).
+- Contributing to the broader neutron-science ecosystem with commits to [mantid](https://github.com/mantidproject/mantid).
