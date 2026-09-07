@@ -1,4 +1,4 @@
-- Deep in the weeds on [bm3dornl](https://github.com/ornlneutronimaging/bm3dornl), refining BM3D denoising algorithms for neutron imaging by fixing noise-sigma estimation, Fourier-SVD thresholding, and multiscale auto-sigma while polishing docs for a JOSS submission.
-- Modernizing [NeuNorm](https://github.com/ornlneutronimaging/NeuNorm) with automated GitHub releases, improved spectrum ROI docstrings, and a couple of fresh releases.
-- Working on geometry-correction tooling across [CylindricalGeometryCorrection](https://github.com/ornlneutronimaging/CylindricalGeometryCorrection) and [timepix_geometry_correction](https://github.com/ornlneutronimaging/timepix_geometry_correction), alongside updates to [braggedgemodeling](https://github.com/ornlneutronimaging/braggedgemodeling) and [NEREIDS](https://github.com/ornlneutronimaging/NEREIDS).
-- Contributing to the broader neutron-science ecosystem with commits to [mantid](https://github.com/mantidproject/mantid).
+- Building out [NEREIDS](https://github.com/ornlneutronimaging/NEREIDS), a neutron imaging toolkit, alongside its Homebrew distribution tap for easier installation.
+- Optimizing [bm3dornl](https://github.com/ornlneutronimaging/bm3dornl) for performance, having recently tackled slow execution speed and cleaned up its Rust prerequisite and Pixi-based build docs.
+- Developing [rustpix](https://github.com/ornlneutronimaging/rustpix), a Rust-powered imaging component, including CI fixes and its own Homebrew packaging.
+- Shepherding a submission through peer review over at [openjournals/joss-reviews](https://github.com/openjournals/joss-reviews) while polishing my scientific software for release.

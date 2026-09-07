@@ -17,10 +17,10 @@ I work at the intersection of **neutron scattering science**, **AI research**, a
 ## 🤖 Currently Exploring
 
 <!-- AI-HIGHLIGHT:START -->
-- Deep in the weeds on [bm3dornl](https://github.com/ornlneutronimaging/bm3dornl), refining BM3D denoising algorithms for neutron imaging by fixing noise-sigma estimation, Fourier-SVD thresholding, and multiscale auto-sigma while polishing docs for a JOSS submission.
-- Modernizing [NeuNorm](https://github.com/ornlneutronimaging/NeuNorm) with automated GitHub releases, improved spectrum ROI docstrings, and a couple of fresh releases.
-- Working on geometry-correction tooling across [CylindricalGeometryCorrection](https://github.com/ornlneutronimaging/CylindricalGeometryCorrection) and [timepix_geometry_correction](https://github.com/ornlneutronimaging/timepix_geometry_correction), alongside updates to [braggedgemodeling](https://github.com/ornlneutronimaging/braggedgemodeling) and [NEREIDS](https://github.com/ornlneutronimaging/NEREIDS).
-- Contributing to the broader neutron-science ecosystem with commits to [mantid](https://github.com/mantidproject/mantid).
+- Building out [NEREIDS](https://github.com/ornlneutronimaging/NEREIDS), a neutron imaging toolkit, alongside its Homebrew distribution tap for easier installation.
+- Optimizing [bm3dornl](https://github.com/ornlneutronimaging/bm3dornl) for performance, having recently tackled slow execution speed and cleaned up its Rust prerequisite and Pixi-based build docs.
+- Developing [rustpix](https://github.com/ornlneutronimaging/rustpix), a Rust-powered imaging component, including CI fixes and its own Homebrew packaging.
+- Shepherding a submission through peer review over at [openjournals/joss-reviews](https://github.com/openjournals/joss-reviews) while polishing my scientific software for release.
 <!-- AI-HIGHLIGHT:END -->
 
 <sub>✨ This section is written by <a href="https://www.anthropic.com/claude">Claude</a> (`anthropic/claude-opus-4.8` via <a href="https://openrouter.ai">OpenRouter</a>), which reviews my recent public GitHub activity on a schedule and summarizes what I've been working on. See <a href="#%EF%B8%8F-how-this-profile-works">how this profile works</a>.</sub>
@@ -61,7 +61,7 @@ I work at the intersection of **neutron scattering science**, **AI research**, a
   <img src="assets/stats.svg" alt="GitHub snapshot showing followers, repository and star counts plus top languages." />
 </p>
 
-<p><sub>Last sync: Sunday, September 6, 2026 at 7:56 AM CDT · 42 followers · 223 repos tracked (196 public) · 70 stars · Top languages: C++ (32.1%), Python (30.8%), HTML (24.6%), IGOR Pro (4.9%), Rust (2.4%), TypeScript (1.7%)</sub></p>
+<p><sub>Last sync: Monday, September 7, 2026 at 9:52 AM CDT · 42 followers · 223 repos tracked (196 public) · 70 stars · Top languages: C++ (32.1%), Python (30.8%), HTML (24.6%), IGOR Pro (4.9%), Rust (2.4%), TypeScript (1.7%)</sub></p>
 
 <p align="center">
   <picture>
@@ -87,4 +87,4 @@ This README is not edited by hand — it's the output of a small agentic pipelin
 [![ORNL](https://img.shields.io/badge/ORNL-Profile-orange?style=flat&logo=atom)](https://www.ornl.gov/staff-profile/chen-zhang)
 [![ORCID](https://img.shields.io/badge/ORCID-Profile-green?style=flat&logo=orcid)](https://orcid.org/0000-0001-8374-4467)
 
-<sub>Last updated on Sunday, September 6, 2026 at 7:56 AM CDT.</sub>
+<sub>Last updated on Monday, September 7, 2026 at 9:52 AM CDT.</sub>
