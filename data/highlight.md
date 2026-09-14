@@ -1,4 +1,4 @@
-- Building out [NEREIDS](https://github.com/ornlneutronimaging/NEREIDS), a neutron imaging toolkit, alongside its Homebrew distribution tap for easier installation.
-- Optimizing [bm3dornl](https://github.com/ornlneutronimaging/bm3dornl) for performance, having recently tackled slow execution speed and cleaned up its Rust prerequisite and Pixi-based build docs.
-- Developing [rustpix](https://github.com/ornlneutronimaging/rustpix), a Rust-powered imaging component, including CI fixes and its own Homebrew packaging.
-- Shepherding a submission through peer review over at [openjournals/joss-reviews](https://github.com/openjournals/joss-reviews) while polishing my scientific software for release.
+- Most of my energy right now is going into [ornlneutronimaging/NEREIDS](https://github.com/ornlneutronimaging/NEREIDS), where I've been shipping features like continuous Doppler handling and count-background routes for neutron imaging analysis.
+- I've been digging into Rust test performance in NEREIDS, tackling a CI-stalling issue where the fitting suite ran unoptimized and took over an hour.
+- Over in [ornlneutronimaging/NeuNorm](https://github.com/ornlneutronimaging/NeuNorm) I'm adding parallel image-stack loading to speed up normalization workflows.
+- I'm also contributing to [mantidproject/mantid](https://github.com/mantidproject/mantid) and exploring [TuragaLab/flyvis](https://github.com/TuragaLab/flyvis) as I keep an eye on AI-driven scientific modeling.
