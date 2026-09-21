@@ -1,4 +1,4 @@
-- Most of my energy right now is going into [ornlneutronimaging/NEREIDS](https://github.com/ornlneutronimaging/NEREIDS), where I've been shipping features like continuous Doppler handling and count-background routes for neutron imaging analysis.
-- I've been digging into Rust test performance in NEREIDS, tackling a CI-stalling issue where the fitting suite ran unoptimized and took over an hour.
-- Over in [ornlneutronimaging/NeuNorm](https://github.com/ornlneutronimaging/NeuNorm) I'm adding parallel image-stack loading to speed up normalization workflows.
-- I'm also contributing to [mantidproject/mantid](https://github.com/mantidproject/mantid) and exploring [TuragaLab/flyvis](https://github.com/TuragaLab/flyvis) as I keep an eye on AI-driven scientific modeling.
+- I'm deep in the development of [NEREIDS](https://github.com/ornlneutronimaging/NEREIDS), refining Bragg-edge fitting with work on resolution covariance, joint calibrant-resolution fits, and kernel handling at window edges.
+- I'm tightening up uncertainty propagation in NEREIDS, from calibration uncertainty by profile to width uncertainty in σt and energy-scale-aware kernels.
+- I'm improving detector geometry corrections through [CylindricalGeometryCorrection](https://github.com/ornlneutronimaging/CylindricalGeometryCorrection) and [timepix_geometry_correction](https://github.com/ornlneutronimaging/timepix_geometry_correction).
+- I'm also maintaining shared tooling like [braggedgemodeling](https://github.com/ornlneutronimaging/braggedgemodeling) and the [python_project_template](https://github.com/neutrons/python_project_template), including CI runtime performance tuning.

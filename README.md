@@ -17,10 +17,10 @@ I work at the intersection of **neutron scattering science**, **AI research**, a
 ## 🤖 Currently Exploring
 
 <!-- AI-HIGHLIGHT:START -->
-- Most of my energy right now is going into [ornlneutronimaging/NEREIDS](https://github.com/ornlneutronimaging/NEREIDS), where I've been shipping features like continuous Doppler handling and count-background routes for neutron imaging analysis.
-- I've been digging into Rust test performance in NEREIDS, tackling a CI-stalling issue where the fitting suite ran unoptimized and took over an hour.
-- Over in [ornlneutronimaging/NeuNorm](https://github.com/ornlneutronimaging/NeuNorm) I'm adding parallel image-stack loading to speed up normalization workflows.
-- I'm also contributing to [mantidproject/mantid](https://github.com/mantidproject/mantid) and exploring [TuragaLab/flyvis](https://github.com/TuragaLab/flyvis) as I keep an eye on AI-driven scientific modeling.
+- I'm deep in the development of [NEREIDS](https://github.com/ornlneutronimaging/NEREIDS), refining Bragg-edge fitting with work on resolution covariance, joint calibrant-resolution fits, and kernel handling at window edges.
+- I'm tightening up uncertainty propagation in NEREIDS, from calibration uncertainty by profile to width uncertainty in σt and energy-scale-aware kernels.
+- I'm improving detector geometry corrections through [CylindricalGeometryCorrection](https://github.com/ornlneutronimaging/CylindricalGeometryCorrection) and [timepix_geometry_correction](https://github.com/ornlneutronimaging/timepix_geometry_correction).
+- I'm also maintaining shared tooling like [braggedgemodeling](https://github.com/ornlneutronimaging/braggedgemodeling) and the [python_project_template](https://github.com/neutrons/python_project_template), including CI runtime performance tuning.
 <!-- AI-HIGHLIGHT:END -->
 
 <sub>✨ This section is written by <a href="https://www.anthropic.com/claude">Claude</a> (`anthropic/claude-opus-4.8` via <a href="https://openrouter.ai">OpenRouter</a>), which reviews my recent public GitHub activity on a schedule and summarizes what I've been working on. See <a href="#%EF%B8%8F-how-this-profile-works">how this profile works</a>.</sub>
@@ -61,7 +61,7 @@ I work at the intersection of **neutron scattering science**, **AI research**, a
   <img src="assets/stats.svg" alt="GitHub snapshot showing followers, repository and star counts plus top languages." />
 </p>
 
-<p><sub>Last sync: Sunday, September 20, 2026 at 8:37 AM CDT · 43 followers · 224 repos tracked (197 public) · 70 stars · Top languages: C++ (32%), Python (30.8%), HTML (24.5%), IGOR Pro (4.9%), Rust (2.6%), TypeScript (1.7%)</sub></p>
+<p><sub>Last sync: Monday, September 21, 2026 at 10:43 AM CDT · 43 followers · 224 repos tracked (197 public) · 70 stars · Top languages: C++ (32%), Python (30.8%), HTML (24.5%), IGOR Pro (4.9%), Rust (2.6%), TypeScript (1.7%)</sub></p>
 
 <p align="center">
   <picture>
@@ -87,4 +87,4 @@ This README is not edited by hand — it's the output of a small agentic pipelin
 [![ORNL](https://img.shields.io/badge/ORNL-Profile-orange?style=flat&logo=atom)](https://www.ornl.gov/staff-profile/chen-zhang)
 [![ORCID](https://img.shields.io/badge/ORCID-Profile-green?style=flat&logo=orcid)](https://orcid.org/0000-0001-8374-4467)
 
-<sub>Last updated on Sunday, September 20, 2026 at 8:37 AM CDT.</sub>
+<sub>Last updated on Monday, September 21, 2026 at 10:43 AM CDT.</sub>
