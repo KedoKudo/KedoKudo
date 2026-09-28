@@ -1,4 +1,4 @@
-- I'm deep in the development of [NEREIDS](https://github.com/ornlneutronimaging/NEREIDS), refining Bragg-edge fitting with work on resolution covariance, joint calibrant-resolution fits, and kernel handling at window edges.
-- I'm tightening up uncertainty propagation in NEREIDS, from calibration uncertainty by profile to width uncertainty in σt and energy-scale-aware kernels.
-- I'm improving detector geometry corrections through [CylindricalGeometryCorrection](https://github.com/ornlneutronimaging/CylindricalGeometryCorrection) and [timepix_geometry_correction](https://github.com/ornlneutronimaging/timepix_geometry_correction).
-- I'm also maintaining shared tooling like [braggedgemodeling](https://github.com/ornlneutronimaging/braggedgemodeling) and the [python_project_template](https://github.com/neutrons/python_project_template), including CI runtime performance tuning.
+- Focusing most of my energy on [NEREIDS](https://github.com/ornlneutronimaging/NEREIDS), where I've been shipping Bragg-edge fitting features like open-beam fits, density and temperature fitting, and beam-interval handling along with error-bar validation.
+- Hardening NEREIDS with better test coverage, including work on beam-edge tests and beam-before-first-edge scenarios.
+- Contributing to model-based iterative reconstruction in [svmbir](https://github.com/cabouman/svmbir) through some routine maintenance work.
+- Doing a bit of upkeep on the neutron imaging normalization tool [NeuNorm](https://github.com/ornlneutronimaging/NeuNorm) and cleaning up the [CylindricalGeometryCorrection](https://github.com/ornlneutronimaging/CylindricalGeometryCorrection) repository.
