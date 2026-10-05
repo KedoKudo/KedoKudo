@@ -1,4 +1,4 @@
-- Focusing most of my energy on [NEREIDS](https://github.com/ornlneutronimaging/NEREIDS), where I've been shipping Bragg-edge fitting features like open-beam fits, density and temperature fitting, and beam-interval handling along with error-bar validation.
-- Hardening NEREIDS with better test coverage, including work on beam-edge tests and beam-before-first-edge scenarios.
-- Contributing to model-based iterative reconstruction in [svmbir](https://github.com/cabouman/svmbir) through some routine maintenance work.
-- Doing a bit of upkeep on the neutron imaging normalization tool [NeuNorm](https://github.com/ornlneutronimaging/NeuNorm) and cleaning up the [CylindricalGeometryCorrection](https://github.com/ornlneutronimaging/CylindricalGeometryCorrection) repository.
+- Deep into statistical modeling work on [NEREIDS](https://github.com/ornlneutronimaging/NEREIDS), experimenting with Poisson-Newton optimization steps, calibrated pulse counts, and run-level overdispersion priors.
+- Hardening the [NeuNorm](https://github.com/ornlneutronimaging/NeuNorm) neutron imaging normalization library with fixes for TIFF strip tags, FITS header cards, ROI handling, and Python 3.11 test compatibility.
+- Tidying up packaging and tooling across projects like [rustpix](https://github.com/ornlneutronimaging/rustpix) and the [python_project_template](https://github.com/neutrons/python_project_template), including virtualenv version caps and Homebrew distribution.
+- Maintaining and streamlining the broader neutron imaging software suite, including [iBeatles](https://github.com/ornlneutronimaging/iBeatles) and [HyperCTui](https://github.com/ornlneutronimaging/HyperCTui).
