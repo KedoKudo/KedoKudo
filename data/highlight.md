@@ -1,4 +1,4 @@
-- Building out [NEREIDS](https://github.com/ornlneutronimaging/NEREIDS) with new nuclear data features, including an ENDF/B-VIII.1 integration, ENDF File 32 reader, nuclear covariance support, and evaluation windows.
-- Hardening [rustpix](https://github.com/ornlneutronimaging/rustpix) by resolving clustering and HDF5 sink defects, improving crate documentation and test harnesses, and keeping its [homebrew-rustpix](https://github.com/ornlneutronimaging/homebrew-rustpix) distribution in sync.
-- Continuing my neutron imaging work across [BraggEdge](https://github.com/ornlneutronimaging/BraggEdge) and [CylindricalGeometryCorrection](https://github.com/ornlneutronimaging/CylindricalGeometryCorrection), while refining the shared [python_project_template](https://github.com/neutrons/python_project_template).
-- Contributing upstream to [mantid](https://github.com/mantidproject/mantid) as part of my ongoing neutron scattering software development.
+- I'm deeply focused on [NEREIDS](https://github.com/ornlneutronimaging/NEREIDS), driving a steady stream of feature branches and merged pull requests across its neutron scattering analysis codebase.
+- I'm building out Python interfaces for uncertainty inputs and covariance mapping, aiming to make error propagation a first-class part of the workflow.
+- I'm fixing fine-grained numerical and parsing details—from SAMMY reader gaps and rebinning helpers to detector tails and erfc tail behavior—to sharpen the accuracy of the analysis pipeline.
+- I'm spending a lot of time reviewing pull requests and discussing issues, keeping code quality high as the project moves quickly.
