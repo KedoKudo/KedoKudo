@@ -17,10 +17,10 @@ I work at the intersection of **neutron scattering science**, **AI research**, a
 ## 🤖 Currently Exploring
 
 <!-- AI-HIGHLIGHT:START -->
-- I'm deeply focused on [NEREIDS](https://github.com/ornlneutronimaging/NEREIDS), driving a steady stream of feature branches and merged pull requests across its neutron scattering analysis codebase.
-- I'm building out Python interfaces for uncertainty inputs and covariance mapping, aiming to make error propagation a first-class part of the workflow.
-- I'm fixing fine-grained numerical and parsing details—from SAMMY reader gaps and rebinning helpers to detector tails and erfc tail behavior—to sharpen the accuracy of the analysis pipeline.
-- I'm spending a lot of time reviewing pull requests and discussing issues, keeping code quality high as the project moves quickly.
+- Actively developing [bm3dornl](https://github.com/ornlneutronimaging/bm3dornl), my BM3D-based neutron imaging denoising package, with recent work on GUI data input, citation metadata, and a Homebrew distribution formula.
+- Building out [NEREIDS](https://github.com/ornlneutronimaging/NEREIDS) through a steady stream of pull requests and code reviews, including some AI-assisted development branches.
+- Contributing to the [Mantid](https://github.com/mantidproject/mantid) project for neutron scattering data reduction and analysis.
+- Engaging in open peer review over at [JOSS](https://github.com/openjournals/joss-reviews), helping evaluate scientific software submissions.
 <!-- AI-HIGHLIGHT:END -->
 
 <sub>✨ This section is written by <a href="https://www.anthropic.com/claude">Claude</a> (`anthropic/claude-opus-4.8` via <a href="https://openrouter.ai">OpenRouter</a>), which reviews my recent public GitHub activity on a schedule and summarizes what I've been working on. See <a href="#%EF%B8%8F-how-this-profile-works">how this profile works</a>.</sub>
@@ -61,7 +61,7 @@ I work at the intersection of **neutron scattering science**, **AI research**, a
   <img src="assets/stats.svg" alt="GitHub snapshot showing followers, repository and star counts plus top languages." />
 </p>
 
-<p><sub>Last sync: Sunday, October 25, 2026 at 8:46 AM CDT · 44 followers · 226 repos tracked (199 public) · 71 stars · Top languages: C++ (30.9%), Python (28.5%), HTML (22.7%), C (6.5%), IGOR Pro (4.5%), Rust (2.3%)</sub></p>
+<p><sub>Last sync: Monday, October 26, 2026 at 10:56 AM CDT · 44 followers · 226 repos tracked (199 public) · 71 stars · Top languages: C++ (30.9%), Python (28.5%), HTML (22.7%), C (6.5%), IGOR Pro (4.5%), Rust (2.3%)</sub></p>
 
 <p align="center">
   <picture>
@@ -87,4 +87,4 @@ This README is not edited by hand — it's the output of a small agentic pipelin
 [![ORNL](https://img.shields.io/badge/ORNL-Profile-orange?style=flat&logo=atom)](https://www.ornl.gov/staff-profile/chen-zhang)
 [![ORCID](https://img.shields.io/badge/ORCID-Profile-green?style=flat&logo=orcid)](https://orcid.org/0000-0001-8374-4467)
 
-<sub>Last updated on Sunday, October 25, 2026 at 8:46 AM CDT.</sub>
+<sub>Last updated on Monday, October 26, 2026 at 10:56 AM CDT.</sub>

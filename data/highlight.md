@@ -1,4 +1,4 @@
-- I'm deeply focused on [NEREIDS](https://github.com/ornlneutronimaging/NEREIDS), driving a steady stream of feature branches and merged pull requests across its neutron scattering analysis codebase.
-- I'm building out Python interfaces for uncertainty inputs and covariance mapping, aiming to make error propagation a first-class part of the workflow.
-- I'm fixing fine-grained numerical and parsing details—from SAMMY reader gaps and rebinning helpers to detector tails and erfc tail behavior—to sharpen the accuracy of the analysis pipeline.
-- I'm spending a lot of time reviewing pull requests and discussing issues, keeping code quality high as the project moves quickly.
+- Actively developing [bm3dornl](https://github.com/ornlneutronimaging/bm3dornl), my BM3D-based neutron imaging denoising package, with recent work on GUI data input, citation metadata, and a Homebrew distribution formula.
+- Building out [NEREIDS](https://github.com/ornlneutronimaging/NEREIDS) through a steady stream of pull requests and code reviews, including some AI-assisted development branches.
+- Contributing to the [Mantid](https://github.com/mantidproject/mantid) project for neutron scattering data reduction and analysis.
+- Engaging in open peer review over at [JOSS](https://github.com/openjournals/joss-reviews), helping evaluate scientific software submissions.
