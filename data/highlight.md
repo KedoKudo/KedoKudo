@@ -1,4 +1,3 @@
-- Advancing GPU-accelerated denoising in [bm3dornl](https://github.com/ornlneutronimaging/bm3dornl), including a new `heterocompute-gpu` branch to extend heterogeneous compute support.
-- Actively developing and reviewing [NEREIDS](https://github.com/ornlneutronimaging/NEREIDS), landing a steady stream of merged pull requests for this neutron imaging tool.
-- Modernizing a suite of neutron imaging packages like [NeuNorm](https://github.com/ornlneutronimaging/NeuNorm), [HyperCTui](https://github.com/ornlneutronimaging/HyperCTui), and [timepix_geometry_correction](https://github.com/ornlneutronimaging/timepix_geometry_correction) alongside the shared [python_project_template](https://github.com/neutrons/python_project_template).
-- Contributing to the [Mantid](https://github.com/mantidproject/mantid) framework and shepherding a submission through [JOSS peer review](https://github.com/openjournals/joss-reviews).
+- I'm deep in development on [NEREIDS](https://github.com/ornlneutronimaging/NEREIDS), building out features like Timepix1 raw-run GUI support, per-pixel and live fraction calculations, and time-background slope handling.
+- I've been reviewing and merging a steady stream of pull requests on [NEREIDS](https://github.com/ornlneutronimaging/NEREIDS), collaborating closely with the team through detailed code reviews.
+- I'm also contributing to the [Mantid](https://github.com/mantidproject/mantid) project, keeping up with pushes and issue discussions in this core neutron data analysis framework.
