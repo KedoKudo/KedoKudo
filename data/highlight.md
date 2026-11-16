@@ -1,3 +1,4 @@
-- I'm deep in development on [NEREIDS](https://github.com/ornlneutronimaging/NEREIDS), building out features like Timepix1 raw-run GUI support, per-pixel and live fraction calculations, and time-background slope handling.
-- I've been reviewing and merging a steady stream of pull requests on [NEREIDS](https://github.com/ornlneutronimaging/NEREIDS), collaborating closely with the team through detailed code reviews.
-- I'm also contributing to the [Mantid](https://github.com/mantidproject/mantid) project, keeping up with pushes and issue discussions in this core neutron data analysis framework.
+- I'm actively developing [NEREIDS](https://github.com/ornlneutronimaging/NEREIDS), driving a steady stream of pull requests and reviews including recent work on a new environment-scatter feature for neutron imaging.
+- I'm contributing to and reviewing changes in the [Mantid](https://github.com/mantidproject/mantid) framework for neutron scattering data reduction and analysis.
+- I'm maintaining several ORNL neutron imaging tools like [NeuNorm](https://github.com/ornlneutronimaging/NeuNorm), [iBeatles](https://github.com/ornlneutronimaging/iBeatles), [CylindricalGeometryCorrection](https://github.com/ornlneutronimaging/CylindricalGeometryCorrection), and [bm3dornl](https://github.com/ornlneutronimaging/bm3dornl) through ongoing code reviews.
+- I'm helping shape scientific software best practices by reviewing contributions to the [python_project_template](https://github.com/neutrons/python_project_template).
