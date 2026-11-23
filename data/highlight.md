@@ -1,4 +1,4 @@
-- I'm actively developing [NEREIDS](https://github.com/ornlneutronimaging/NEREIDS), driving a steady stream of pull requests and reviews including recent work on a new environment-scatter feature for neutron imaging.
-- I'm contributing to and reviewing changes in the [Mantid](https://github.com/mantidproject/mantid) framework for neutron scattering data reduction and analysis.
-- I'm maintaining several ORNL neutron imaging tools like [NeuNorm](https://github.com/ornlneutronimaging/NeuNorm), [iBeatles](https://github.com/ornlneutronimaging/iBeatles), [CylindricalGeometryCorrection](https://github.com/ornlneutronimaging/CylindricalGeometryCorrection), and [bm3dornl](https://github.com/ornlneutronimaging/bm3dornl) through ongoing code reviews.
-- I'm helping shape scientific software best practices by reviewing contributions to the [python_project_template](https://github.com/neutrons/python_project_template).
+- Deep in [NEREIDS](https://github.com/ornlneutronimaging/NEREIDS), where I recently validated our forward model against SAMMY for cases with gaps in the Ta oracle and chased down a low-energy lattice ripple fix.
+- Actively developing [rustpix](https://github.com/ornlneutronimaging/rustpix), tackling TPX3 timing decisions, TDC setting deprecations, and SNS gap-neutron documentation.
+- Maintaining the distribution side of things through [homebrew-rustpix](https://github.com/ornlneutronimaging/homebrew-rustpix) to make installation smoother.
+- Contributing upstream to [Mantid](https://github.com/mantidproject/mantid) with code and reviews on the neutron data reduction framework.
